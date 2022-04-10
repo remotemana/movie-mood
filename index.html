@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 
 </head>
 <body>
+    
     <!-- GARRETT -->
     <header id="headerMenu">
         <h1>Fundango</h1>
@@ -20,12 +22,8 @@
         <div id="navExpansion">
             <a href="#quizMenu">QUIZ</a>
             <a href="#moodMenu">MOOD</a>
-<<<<<<< HEAD
             <a href="#favoritesMenu">FAVORITES</a>
             <a href="#filmCarousel">FILMS</a>
-=======
-            <a href="favoritesMenu">FAVORITES</a>
->>>>>>> dev
         </div>
     </div>
 
@@ -34,33 +32,62 @@
         <h2>What are your interests?</h2>
         <div id="questionContainer">
             <div id="selectionMenu">
-                
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">Tell us how you're feeling</label>
+                  </div>
             </div>
         </div>
     </section>
 
     <!-- LUCAS -->
     <section id="moodMenu">
-        <input>
+        
     </section>
 
-<<<<<<< HEAD
     <!-- BROOKE -->
-    <section id="filmCarousel">
-        <div class="movieCard">
-            <img>
-        </div>
-        <div class="movieCard">
-            <img>
-        </div>
-        <div class="movieCard">
-            <img>
-        </div>
+
     </section>
+    
+<section class="mood-cards">
+    <div class="caro-container">
+        <div class="card">
+            <span></span>
+            <div class="movieinformation">
+                <h3>Card ONE</h3>
+                <p>Release Date: 
+                <p>Running Time: </p>
+                <p>Directed by: </p>
+                <a href="#favorites">heart Icon</a>
+            </div>
+        </div>
+    </div>
+    <div class="caro-container">
+        <div class="card">
+            <span></span>
+            <div class="movieinformation">
+                <h3>Card TWO</h3>
+                <p>Release Date: 
+                <p>Running Time: </p>
+                <p>Directed by: </p>
+                <a href="#favorites">heart Icon</a>
+            </div>
+        </div>
+    </div>
+    <div class="caro-container">
+        <div class="card">
+            <span></span>
+            <div class="movieinformation">
+                <h3>Card THREE</h3>
+                <p>Release Date: 
+                <p>Running Time: </p>
+                <p>Directed by: </p>
+                <a href="#favorites">heart Icon</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-=======
->>>>>>> dev
     <!-- TYLER -->
     <section id="favoritesMenu">
         <h1>Favorites</h1>
@@ -127,6 +154,6 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="./assets/script/script.js"></script>
 </body>
 </html>
