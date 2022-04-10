@@ -33,12 +33,13 @@
     --bright: #C0B3Ae; /*rgb(192, 197, 174)*/
 }
  body{
+    background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/001/441/370/large/file.jpg?1640128516");
     background-color: black;
     color: whitesmoke;
     
 }
 
-/* card carosel starts  */
+/* card carosel starts =============================================================================== */
 .caro-container
 {
   display: flex;
@@ -247,6 +248,19 @@
   border: 1px solid rgba(255, 0, 88, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
-/* card carosel stops */
+/* card carosel stops =================================================== */
 
+/* text input start ================================================================================ */
+
+
+/* Style the video: 100% width and height to cover the entire window */
+/* #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  } */
+
+/* text input stops ================================================================================ */
 
