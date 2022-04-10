@@ -498,3 +498,35 @@ body {
 
 /* text input stops ================================================================================ */
 
+
+/* ========================================================= */
+/* TYLER'S AREA */
+/* FAVORITES MENU */
+#favoritesMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.favoriteCard {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.moviePosterArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textArea {
+  display: none;
+  flex-direction: column;
+}
+
