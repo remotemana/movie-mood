@@ -95,6 +95,91 @@ body {
 }
 
 /* ================= header stop */
+<<<<<<< HEAD
+/* circle menu */
+
+
+.menu .nav-position {
+  top: 50px;
+  right: 50px;
+  position: fixed;
+  float: right;
+}
+
+/* .menu-toggler {
+  position: fixed;
+  display: block;
+  top:60px;
+  bottom:0;
+  right:60px;
+  left:0;
+  margin:auto;
+  width:40px;
+  height:40px;
+  z-index:2;
+  opacity:0;
+  cursor:pointer;
+} */
+.menu-toggler:hover + label,
+.menu-toggler:hover + label:before,
+.menu-toggler:hover + label:after,{
+  background: white;
+}
+.menu-toggler:checked + label {
+  background: transparent;
+}
+.menu-toggler:checked + label:before,
+.menu-toggler:checked + label:after,{
+  top:0;
+  width:40px;
+  transform-origin: 50% 50%;
+}
+.menu-toggler:checked + label:before {
+  transform: rotate(45deg) translateY(-15px) translateX(-15px);
+}
+.menu-toggler:checked + label:after {
+  transform: rotate(-45deg);
+}
+.menu-toggler:checked ~ ul .menu-item { 
+  opacity: 1;
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+  transform: rotate(0deg) translate(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+  transform: rotate(60deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+  transform: rotate(120deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+  transform: rotate(180deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+  transform: rotate(240deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(6) {
+  transform: rotate(300deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item a {
+  pointer-events:auto;
+}
+.menu-toggler + label {
+  width: 40px;
+  height: 5px;
+  display: block;
+  z-index: 1;
+  border-radius: 2.5px;
+  background: rgba(230, 239, 250, 0.9);
+  transition: transform 0.5s top 0.5s;
+  position: fixed;
+  display: block;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 50px;
+  margin: auto;
+=======
 /* circle menu  */
 .bars {
   /*   background-color:pink; */
@@ -113,6 +198,7 @@ body {
   height: 4px;
   background-color: #fff;
   position: absolute;
+>>>>>>> dev
 }
 
 span::before,
@@ -726,8 +812,14 @@ article a:hover {
   flex-direction: column;
 }
 
+#favoritesMenu h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .cardsArea {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -750,3 +842,6 @@ article a:hover {
   width: 200px;
 }
 
+.infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
+  color: black;
+}
