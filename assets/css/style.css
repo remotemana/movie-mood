@@ -261,7 +261,10 @@ body {
     
 }
 
-
+.mood-cards {
+  display: flex; 
+  justify-content: center;
+}
 
 .caro-container
 {
