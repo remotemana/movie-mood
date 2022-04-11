@@ -98,14 +98,19 @@ body {
 /* circle menu */
 
 
+.menu .nav-position {
+  top: 50px;
+  right: 50px;
+  position: fixed;
+  float: right;
+}
 
-
-.menu-toggler {
-  position: absolute;
+/* .menu-toggler {
+  position: fixed;
   display: block;
-  top:0;
+  top:60px;
   bottom:0;
-  right:0;
+  right:60px;
   left:0;
   margin:auto;
   width:40px;
@@ -113,7 +118,7 @@ body {
   z-index:2;
   opacity:0;
   cursor:pointer;
-}
+} */
 .menu-toggler:hover + label,
 .menu-toggler:hover + label:before,
 .menu-toggler:hover + label:after,{
@@ -166,12 +171,12 @@ body {
   border-radius: 2.5px;
   background: rgba(230, 239, 250, 0.9);
   transition: transform 0.5s top 0.5s;
-  position: absolute;
+  position: fixed;
   display: block;
-  top: 0;
+  top: 50px;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 50px;
   margin: auto;
 }
 .menu-toggler + label:before,
@@ -430,8 +435,14 @@ body {
   flex-direction: column;
 }
 
+#favoritesMenu h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .cardsArea {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -453,3 +464,6 @@ body {
   flex-direction: column;
 }
 
+.infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
+  color: black;
+}
