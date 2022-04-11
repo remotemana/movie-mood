@@ -252,26 +252,9 @@ body {
 
 
 /* card carosel starts  */
-* {
-    margin: 0;
-    padding: 0;
 
-}
-:root {
-    --dark-calm: #455c71; /*rgb(69, 92, 113)*/
-    --medium-calm:#347F8C; /*rgb(52, 127,140)*/
-    --light-calm: #4F93A7; /*rgb(79, 147, 167)*/
-    --ligth-fury: #e36d6d; /*rgb(227, 109, 109)*/
-    --medium-fury: #82340A; /*rgb(130, 52, 10)*/
-    --dark-fury: #68251A; /*rgb(104, 37, 26)*/
-    --bright: #C0B3Ae; /*rgb(192, 197, 174)*/
-}
- body{
-    background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/001/441/370/large/file.jpg?1640128516");
-    background-color: black;
-    color: whitesmoke;
-    
-}
+
+
 
 /* card carosel starts =============================================================================== */
 .caro-container
