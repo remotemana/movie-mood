@@ -836,12 +836,6 @@ article a:hover {
   justify-content: center;
 }
 
-.customInput {
-  resize: none;
-  height: 200px;
-  width: 200px;
-}
-
 .infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
   color: black;
 }
