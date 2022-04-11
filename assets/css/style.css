@@ -20,7 +20,7 @@
 }
 
 /* header css =============================================================*/
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ body {
   height: 100%;
   display: table;
   background-color: black;
-}
+} */
 
 @font-face {
   font-family: neon;
@@ -96,13 +96,7 @@ body {
 
 /* ================= header stop */
 /* circle menu */
-body {
-  overflow: hidden;
-  background: #E6E6FA;
-  background: linear-gradient(to right, #b24592, #f15f79)
-}
 
-  
 
 
 
