@@ -493,9 +493,6 @@ article a:hover {
   flex-direction: column;
   justify-content: center;
 }
-
-
-
 .infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
   color: black;
 }
