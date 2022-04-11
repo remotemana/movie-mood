@@ -520,8 +520,9 @@ article a:hover {
   justify-content: center;
 }
 
-.textArea {
-  display: none;
-  flex-direction: column;
+.customInput {
+  resize: none;
+  height: 200px;
+  width: 200px;
 }
 
