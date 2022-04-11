@@ -20,15 +20,7 @@
 }
 
 /* header css =============================================================*/
-/* html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: table;
-  background-color: black;
-} */
+
 
 @font-face {
   font-family: neon;
@@ -94,8 +86,9 @@ body {
   }
 }
 
-/* ================= header stop */
-/* circle menu  */
+/* header stop=====================================================================  */
+
+/* circle menu */
 .bars {
   /*   background-color:pink; */
   position: absolute;
@@ -105,7 +98,7 @@ body {
   right: 30px;
   cursor: pointer;
   z-index: 101;
-  padding-top:9px;
+  padding-top: 9px;
 }
 
 .bar {
@@ -147,14 +140,7 @@ span::after {
   animation-fill-mode: forwards;
 }
 
-
 /* Navbar Links CSS */
-
-.cornerMenu {
-  opacity: .8;
-
-}
-
 
 #nav {
   position: absolute;
@@ -179,14 +165,11 @@ span::after {
   right: 0;
   text-indent: 50vw;
   border-radius: 50%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 #nav a:hover {
-  background: #e36d6d
-  
-  
- 
+  background: #357ffd;
 }
 
 ul {
@@ -206,7 +189,7 @@ ul {
   right: -10vw;
   position: absolute;
   transition: all 1s ease-in-out;
-  background: #455c71;
+  background: #2979ff;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
 
@@ -216,7 +199,7 @@ nav.visible li:first-child {
   top: -100vw;
   right: -100vw;
   z-index: 5;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
 }
 
@@ -226,52 +209,49 @@ nav.visible li:nth-child(2) {
   top: -75vw;
   right: -75vw;
   z-index: 6;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
 }
 
-nav.visible li:nth-child(3){
+nav.visible li:nth-child(3) {
   width: 100vw;
   height: 100vw;
   top: -50vw;
   right: -50vw;
   z-index: 7;
-  transition: all .7s ease-in-out;
+  transition: all 0.7s ease-in-out;
   box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
 }
 
-nav.visible li:last-child{
+nav.visible li:last-child {
   width: 50vw;
   height: 50vw;
   top: -25vw;
   right: -25vw;
   z-index: 8;
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
 }
 
 nav.visible li:first-child a {
   line-height: 265vw !important;
-    text-indent: 15vw !important;
-
+  text-indent: 15vw !important;
 }
 
 nav.visible li:nth-child(2) a {
   line-height: 200vw !important;
-  text-indent:17vw !important;
+  text-indent: 17vw !important;
 }
 
 nav.visible li:nth-child(3) a {
   line-height: 137vw !important;
-    text-indent: 17vw !important;
-  
+  text-indent: 17vw !important;
 }
 
 nav.visible li:last-child a {
   line-height: 70vw !important;
-  text-indent:12vw !important;
+  text-indent: 12vw !important;
 }
-
 
 /* Main Body CSS */
 
@@ -287,8 +267,8 @@ h1 {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   text-transform: uppercase;
   font-size: 120px;
-  letter-spacing:5px;
-  padding-top:40px;
+  letter-spacing: 5px;
+  padding-top: 40px;
 }
 
 article p {
@@ -299,12 +279,12 @@ article p {
 article a {
   color: #fff;
   text-decoration: none;
-  opacity: .2;
+  opacity: 0.2;
   font-size: 12px;
 }
 
 article a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 @keyframes top-bar {
@@ -325,11 +305,9 @@ article a:hover {
   }
 }
 
-
-@media screen and (max-width:800px) {
-
+@media screen and (max-width: 800px) {
   h1 {
-    padding-top:80px;
+    padding-top: 80px;
     font-size: 60px;
   }
 }
@@ -337,8 +315,7 @@ article a:hover {
 /* circle menu ends */
 
 
-    
-
+  /*BROOKE=====================================================================  */
 
 .mood-cards {
   display: flex; 
@@ -476,14 +453,7 @@ article a:hover {
 /* text input start ================================================================================ */
 
 
-/* Style the video: 100% width and height to cover the entire window */
-/* #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  } */
+
 
 /* text input stops ================================================================================ */
 
@@ -496,8 +466,14 @@ article a:hover {
   flex-direction: column;
 }
 
+#favoritesMenu h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .cardsArea {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -514,9 +490,8 @@ article a:hover {
   justify-content: center;
 }
 
-.customInput {
-  resize: none;
-  height: 200px;
-  width: 200px;
-}
 
+
+.infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
+  color: black;
+}

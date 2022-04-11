@@ -23,22 +23,23 @@
 </div>
     <!-- GARRETT -->
 
-    <!--HamBurger Icon-->
+ 
+   <!--HamBurger Icon-->
 <div class="bars" id="nav-action">
     <span class="bar"> </span>
   </div>
   
   <!--Navbar Links-->
-  <div class="cornerMenu">
-    <nav id="nav">
-        <ul>
-          <li class="shape-circle circle-one"><a href="#">Contact</a></li>
-          <li class="shape-circle circle-two"><a href="#">Favorites</a></li>
-         <li class="shape-circle circle-three"><a href="#">Films</a></li>
-          <li class="shape-circle circle-five"><a href="#">Mood</a>
-          </li>
-      </ul>
-    </nav>
+  <nav id="nav">
+    <ul>
+      <li class="shape-circle circle-one"><a href="#">Contact</a></li>
+      <li class="shape-circle circle-two"><a href="#">Blog</a></li>
+      <li class="shape-circle circle-three"><a href="#">Work</a></li>
+      <li class="shape-circle circle-five">
+        <a href="#">Home</a>
+      </li>
+    </ul>
+  </nav>
   </div>
   
 
@@ -64,7 +65,6 @@
 <section class="mood-cards">
     <div class="caro-container">
         <div class="card">
-            <span></span>
             <div class="movieinformation">
                 <h3>MOVIE</h3>
                 <p>Release Date: </p>
@@ -76,7 +76,6 @@
     </div>
     <div class="caro-container">
         <div class="card">
-            <span></span>
             <div class="movieinformation">
                 <h3> <strong>MOVIE</strong></h3>
                 <p>Release Date: </p>
@@ -88,7 +87,6 @@
     </div>
     <div class="caro-container">
         <div class="card">
-            <span></span>
             <div class="movieinformation">
                 <h3><strong>MOVIE</strong></h3>
                 <p>Release Date: </p>
@@ -104,63 +102,81 @@
     <section id="favoritesMenu">
         <h1>Favorites</h1>
         <div class="cardsArea">
-            <div class="favoriteCard">
-                <div class="moviePosterArea">
-                    <img class="moviePoster" src="dummyScreenshot.jpg" alt="dummy film poster" width="135" height="200">
-                </div>
-                <div class="textArea">
-                    <div class="titleArea">
-                        <h1>Movie Title</h1>
-                    </div>
-                    <div class="infoArea">
-                        <h3 class="infoGenre">GENRES</h3>
-                        <p class="infoGenre">this is the genre</p>
-                        <h3 class="infoMoods">MOODS</h3>
-                        <p class="infoMoods">This is the mood</p>
-                        <h3 class="infoLastWatched">LAST WATCHED</h3>
-                        <p class="infoLastWatched">This is when you last watched</p>
-                        <h3 class="infoUserRating">RATING</h3>
-                        <p class="infoUserRating"> @ @ @ * *</p>
-                    </div>
-                </div>
-            </div>
-            <div class="favoriteCard">
-                <div class="moviePosterArea">
-                    <img class="moviePoster" src="dummyScreenshot.jpg" alt="dummy film poster" width="135" height="200">
-                </div>
-                <div class="textArea">
-                    <div class="titleArea">
-                        <h1>Movie Title</h1>
-                    </div>
-                    <div class="infoArea">
-                        <h3 class="infoGenre">GENRES</h3>
-                        <p class="infoGenre">this is the genre</p>
-                        <h3 class="infoMoods">MOODS</h3>
-                        <p class="infoMoods">This is the mood</p>
-                        <h3 class="infoLastWatched">LAST WATCHED</h3>
-                        <p class="infoLastWatched">This is when you last watched</p>
-                        <h3 class="infoUserRating">RATING</h3>
-                        <p class="infoUserRating"> @ @ @ * *</p>
+            <div class="uk-animation-toggle">
+                <div class="favoriteCard uk-animation-fade">
+                    <!-- This is an anchor toggling the modal -->
+                    <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="135" height="200"></a>
+        
+                    <!-- This is the modal -->
+                    <div id="modal-example" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">Bears on a Submarine</h2>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="135" height="200">
+                                <div class="uk-padding-large">
+                                    <h6 class="infoGenre">GENRES</h6>
+                                    <p class="infoGenre">Sci-Fi, Horror, Romance</p>
+                                    <h6 class="infoMoods">MOODS</h6>
+                                    <p class="infoMoods">Happy, Scared</p>
+                                    <h6 class="infoLastWatched">LAST WATCHED</h6>
+                                    <p class="infoLastWatched">Yesterday</p>
+                                    <h6 class="infoUserRating">RATING</h6>
+                                    <p class="infoUserRating"> @ @ @ * *</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="favoriteCard">
-                <div class="moviePosterArea">
-                    <img class="moviePoster" src="dummyScreenshot.jpg" alt="dummy film poster" width="135" height="200">
-                </div>
-                <div class="textArea">
-                    <div class="titleArea">
-                        <h1>Movie Title</h1>
+            <div class="uk-animation-toggle">
+                <div class="favoriteCard uk-animation-fade">
+                    <!-- This is an anchor toggling the modal -->
+                    <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="135" height="200"></a>
+        
+                    <!-- This is the modal -->
+                    <div id="modal-example2" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">The Expendababies</h2>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="135" height="200">
+                                <div class="uk-padding-large">
+                                    <h6 class="infoGenre">GENRES</h6>
+                                    <p class="infoGenre">Action, Comedy, Some Baby Thing</p>
+                                    <h6 class="infoMoods">MOODS</h6>
+                                    <p class="infoMoods">Excited</p>
+                                    <h6 class="infoLastWatched">LAST WATCHED</h6>
+                                    <p class="infoLastWatched">3 months ago</p>
+                                    <h6 class="infoUserRating">RATING</h6>
+                                    <p class="infoUserRating"> @ @ @ @ *</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="infoArea">
-                        <h3 class="infoGenre">GENRES</h3>
-                        <p class="infoGenre">this is the genre</p>
-                        <h3 class="infoMoods">MOODS</h3>
-                        <p class="infoMoods">This is the mood</p>
-                        <h3 class="infoLastWatched">LAST WATCHED</h3>
-                        <p class="infoLastWatched">This is when you last watched</p>
-                        <h3 class="infoUserRating">RATING</h3>
-                        <p class="infoUserRating"> @ @ @ * *</p>
+                </div>
+            </div>
+            <div class="uk-animation-toggle">
+                <div class="favoriteCard uk-animation-fade">
+                    <!-- This is an anchor toggling the modal -->
+                    <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="135" height="200"></a>
+        
+                    <!-- This is the modal -->
+                    <div id="modal-example3" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">The Expendababies</h2>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="135" height="200">
+                                <div class="uk-padding-large">
+                                    <h6 class="infoGenre">GENRES</h6>
+                                    <p class="infoGenre">Romance, Thriller</p>
+                                    <h6 class="infoMoods">MOODS</h6>
+                                    <p class="infoMoods">In Love</p>
+                                    <h6 class="infoLastWatched">LAST WATCHED</h6>
+                                    <p class="infoLastWatched">5 days ago</p>
+                                    <h6 class="infoUserRating">RATING</h6>
+                                    <p class="infoUserRating"> @ @ @ @ @</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
