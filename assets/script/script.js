@@ -21,7 +21,7 @@ function barClicked() {
 
 // Lucas Emotion to text api start============================================
 
-// TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited. 
+// TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
 
 // var myHeaders = new Headers();
 // myHeaders.append("apikey", "yOoOHlFQ2ZmZ60NwgqeuNBSzWiLBVWcL");
