@@ -19,8 +19,16 @@
     
 }
 
-/* header css =============================================================*/
 
+/* header css ==================================================================*/
+
+/* start of textbox area */
+.customInput {
+  resize: none;
+}
+
+
+/* end of textbox area ========================================================== */
 
 @font-face {
   font-family: neon;
@@ -89,6 +97,10 @@
 /* header stop=====================================================================  */
 
 /* circle menu */
+.wheelOpacity{
+  opacity: .8;
+}
+
 .bars {
   /*   background-color:pink; */
   position: absolute;
@@ -169,7 +181,7 @@ span::after {
 }
 
 #nav a:hover {
-  background: #357ffd;
+  background:#e36d6d ;
 }
 
 ul {
@@ -189,7 +201,7 @@ ul {
   right: -10vw;
   position: absolute;
   transition: all 1s ease-in-out;
-  background: #2979ff;
+  background: #455c71;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
 
@@ -489,7 +501,10 @@ article a:hover {
   flex-direction: column;
   justify-content: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9284c9d4d1ffe34e65b657d5794b11c79eecf620
 .infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
   color: black;
 }
