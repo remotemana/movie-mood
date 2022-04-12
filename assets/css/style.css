@@ -548,6 +548,13 @@ article a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+
+.virgoConst:hover {
+  opacity: 1.0;}
+.infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
+  color: black;}
+
+
 .cancerConst {
   position: absolute;
   z-index: 0;
@@ -555,7 +562,7 @@ article a:hover {
   top: 250%;
   right: 15%;
   opacity: 0.3;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; 
 }
 
 .capriConst {
@@ -583,4 +590,5 @@ article a:hover {
 /* GLOW ON HOVER */
 .virgoConst:hover, .cancerConst:hover, .capriConst:hover, .taurusConst:hover {
   opacity:1;
+
 }
