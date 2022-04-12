@@ -1,3 +1,33 @@
+// PSEUDOCODE
+// 1. Push submit button 
+  // addEventlistener
+  // listen for click function 
+// 2. analyze mood 
+  // if else statements that would link the mood api data to the movie data 
+      // 'if happy > the rest than pull a random movie from these three genres: comedy, romance, and feel good
+        // the movie areas would be under a function 
+// 3. analyze movie data
+  // fetch the data of the movie by genre 
+  // grab the initial genre by id 
+    // get specific data: title, background img, release date, running time, directed by
+  // have functions that are correlated by the mood as well as end conditions
+// 4. display movies on the cards 
+//shows the background of the card
+  // that would be apart of the function for diplay cards 
+  // fetch the data of the genre 
+  // fetch specific data of the card (name)
+// 5. once favorited moves to favorite
+    // add event listener for the click of the favorite cards 
+      // pull the data from the favorite cards
+      // pull the data to local storage 
+      // display o favorite cards 
+        // add a div class and card elments to the page 
+        // once added, add the div elements and classes that make the cards 
+        // if no one has picked out the favorite card then display a modal of no cards
+        // can clear the specific card
+        // have a remove from favorites button that will modal tat will confirm their removal 
+
+// WORKSPACE
 console.log("I am linked!")
 // movie api*
 
