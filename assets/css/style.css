@@ -102,7 +102,7 @@
   display: flex;
   justify-content: center;
 }
-#mood-button {
+#mdBtn {
   display: flex;
   position: absolute;
   bottom: 50px;
