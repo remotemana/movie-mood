@@ -16,19 +16,12 @@
     background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/001/441/370/large/file.jpg?1640128516");
     background-color: black;
     color: whitesmoke;
+
     
 }
 
+/* header css =============================================================*/
 
-/* header css ==================================================================*/
-
-/* start of textbox area */
-.customInput {
-  resize: none;
-}
-
-
-/* end of textbox area ========================================================== */
 
 @font-face {
   font-family: neon;
@@ -97,10 +90,6 @@
 /* header stop=====================================================================  */
 
 /* circle menu */
-.wheelOpacity{
-  opacity: .8;
-}
-
 .bars {
   /*   background-color:pink; */
   position: absolute;
@@ -181,7 +170,7 @@ span::after {
 }
 
 #nav a:hover {
-  background:#e36d6d ;
+  background: #357ffd;
 }
 
 ul {
@@ -201,7 +190,7 @@ ul {
   right: -10vw;
   position: absolute;
   transition: all 1s ease-in-out;
-  background: #455c71;
+  background: #2979ff;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
 
@@ -266,6 +255,7 @@ nav.visible li:last-child a {
 }
 
 /* Main Body CSS */
+
 
 .container {
   display: flex;
@@ -476,31 +466,85 @@ article a:hover {
 #favoritesMenu {
   display: flex;
   flex-direction: column;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 500px;
+
+}
+
+.favTextArea {
+  position: absolute;
+  z-index: 6;
 }
 
 #favoritesMenu h1 {
   display: flex;
   justify-content: center;
+  z-index:2;
+  margin-bottom: 500p
+
 }
 
 .cardsArea {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  row-gap: 30px;
+  column-gap: 90px;
+
 }
 
 .favoriteCard {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 30px 30px;
+  z-index: 4;
 }
 
-.moviePosterArea {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* BACKGROUND CONSTELLATIONS */
+.virgoConst {
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  bottom: -1000px;
+  left: 200px;
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out;
 }
-.infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
-  color: black;
+
+.cancerConst {
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  bottom: -300px;
+  right: 850px;
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out;
+}
+
+.capriConst {
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  top: 100px;
+  right: 200px;
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.taurusConst {
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  top: 500px;
+  left: 700px;
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out;
+}
+
+/* GLOW ON HOVER */
+.virgoConst:hover, .cancerConst:hover, .capriConst:hover, .taurusConst:hover {
+  opacity:1;
 }
