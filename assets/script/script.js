@@ -78,7 +78,42 @@ function barClicked() {
 //   .then(response => response.text())
 //   .then(result => console.log(result))
 //   .catch(error => console.log('error', error));
-
-
-
 // Emotion to text api end====================================================
+
+// IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
+function movieresults () {
+  for (i = 0; i > mood.length; i++){
+    // pulling the value out of the happy object in order to compare 
+      // need to figure out how to remove/hide it from the object 
+      // make all 
+    var happy = mood[i].happy.value()
+    var angry = mood[i].angry.value()
+    var surprise = mood[i].surprise.value()
+    var sad = mood[i].sad.value()
+    var fear = mood[i].fear.value()
+    if (happy > mood[i].length.val()) {
+      familygenre()
+      adventuregenre()
+      comedygenre()
+    } else if (angry > mood[i].length.val()){
+      adventuregenre()
+      actiongenre()
+      mysterygenre()
+    } else if (surprise > mood[i].val()) {
+      adventuregenre()
+      crimegenre()
+      dramagenre()
+    } else if (sad > mood[i].length.val()) {
+      adventuregenre()
+      actiongenre()
+      fantasygenre()
+    } else if (fear > mood[i].length.val()) {
+      romancegenre ()
+      sciencefictiongenre()
+      comedygenre()
+    }
+}
+}
+
+// IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
+
