@@ -32,6 +32,8 @@
   /* display: table-cell; */
   text-align: center;
   vertical-align: middle;
+  margin-bottom: 500px;
+  padding-top: 250px;
 }
 
 .neon {
@@ -88,6 +90,36 @@
 }
 
 /* header stop=====================================================================  */
+
+/* start of text box area===========================================================*/
+.customInput {
+  resize: none;
+}
+
+.moodButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#mood-button {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.textButtonBox {
+  margin-bottom: 500px;
+}
+/* end of text box area============================================================ */
+
+
+
 
 /* circle menu */
 .bars {
@@ -322,6 +354,7 @@ article a:hover {
 .mood-cards {
   display: flex; 
   justify-content: center;
+  margin-bottom: 500px;
 }
 
 .caro-container
