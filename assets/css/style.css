@@ -97,6 +97,10 @@
 /* header stop=====================================================================  */
 
 /* circle menu */
+.wheelOpacity{
+  opacity: .8;
+}
+
 .bars {
   /*   background-color:pink; */
   position: absolute;
@@ -177,7 +181,7 @@ span::after {
 }
 
 #nav a:hover {
-  background: #357ffd;
+  background:#e36d6d ;
 }
 
 ul {
@@ -197,7 +201,7 @@ ul {
   right: -10vw;
   position: absolute;
   transition: all 1s ease-in-out;
-  background: #2979ff;
+  background: #455c71;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
 
@@ -497,9 +501,6 @@ article a:hover {
   flex-direction: column;
   justify-content: center;
 }
-
-
-
 .infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
   color: black;
 }
