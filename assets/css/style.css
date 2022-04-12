@@ -20,16 +20,8 @@
     
 }
 
+/* header css =============================================================*/
 
-/* header css ==================================================================*/
-
-/* start of textbox area */
-.customInput {
-  resize: none;
-}
-
-
-/* end of textbox area ========================================================== */
 
 @font-face {
   font-family: neon;
@@ -40,6 +32,8 @@
   /* display: table-cell; */
   text-align: center;
   vertical-align: middle;
+  margin-bottom: 500px;
+  padding-top: 250px;
 }
 
 .neon {
@@ -97,11 +91,37 @@
 
 /* header stop=====================================================================  */
 
-/* circle menu */
-.wheelOpacity{
-  opacity: .8;
+/* start of text box area===========================================================*/
+.customInput {
+  resize: none;
 }
 
+.moodButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#mood-button {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.textButtonBox {
+  margin-bottom: 500px;
+}
+/* end of text box area============================================================ */
+
+
+
+
+/* circle menu */
 .bars {
   /*   background-color:pink; */
   position: absolute;
@@ -182,7 +202,7 @@ span::after {
 }
 
 #nav a:hover {
-  background:#e36d6d ;
+  background: #357ffd;
 }
 
 ul {
@@ -202,7 +222,7 @@ ul {
   right: -10vw;
   position: absolute;
   transition: all 1s ease-in-out;
-  background: #455c71;
+  background: #2979ff;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
 
@@ -334,6 +354,7 @@ article a:hover {
 .mood-cards {
   display: flex; 
   justify-content: center;
+  margin-bottom: 500px;
 }
 
 .caro-container
@@ -478,6 +499,9 @@ article a:hover {
 #favoritesMenu {
   display: flex;
   flex-direction: column;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 500px;
 
 }
 
@@ -490,6 +514,7 @@ article a:hover {
   display: flex;
   justify-content: center;
   z-index:2;
+  margin-bottom: 500p
 
 }
 
@@ -497,33 +522,70 @@ article a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  row-gap: 30px;
+  column-gap: 90px;
 
 }
 
 .favoriteCard {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 30px 30px;
   z-index: 4;
 }
 
-
-.virgoConst{
+/* BACKGROUND CONSTELLATIONS */
+.virgoConst {
   position: absolute;
   z-index: 0;
   max-width: 15%;
-  bottom: -800px;
-  left: 300px;
-  opacity: 0.5;
+  bottom: -1000px;
+  left: 200px;
+  opacity: 0.3;
   transition: all 0.5s ease-in-out;
-
-
 }
+
 
 .virgoConst:hover {
   opacity: 1.0;}
 .infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
-  color: black;
+  color: black;}
+
+
+.cancerConst {
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  bottom: -300px;
+  right: 850px;
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out; 
+}
+
+.capriConst {
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  top: 100px;
+  right: 200px;
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.taurusConst {
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  top: 500px;
+  left: 700px;
+  opacity: 0.3;
+  transition: all 0.5s ease-in-out;
+}
+
+/* GLOW ON HOVER */
+.virgoConst:hover, .cancerConst:hover, .capriConst:hover, .taurusConst:hover {
+  opacity:1;
 
 }

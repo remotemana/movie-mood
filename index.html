@@ -45,12 +45,17 @@
 
     <!-- LUCAS mood text area -->
     
-    <section class="uk-flex uk-flex-center" id="quizMenu">
-        <div class="uk-margin" id="textArea">
-          <textarea class="customInput uk-input uk-form-width-large uk-text-background uk-margin-xlarge-bottom uk-margin-xlarge-top uk-height-large uk-text-center ui-text-larger" style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px;" type="text" placeholder="Tell it like it is!"></textArea>
-      </div> 
-    </section>    
+    <div class="textButtonBox">
+        <section class="uk-flex uk-flex-center" id="quizMenu">
+            <div class="uk-margin" id="textArea">
+            <textarea class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center" style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px;" type="text"    placeholder="Tell it like it is!"></textArea>
+            </div>
+        </section>    
 
+        <div class="moodButton">
+            <button id="mood-button">Generate!</button>
+        </div>
+    </div>
     <!-- end of text area -->
 
     <!-- BROOKE -->
@@ -101,14 +106,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="135" height="200"></a>
+                        <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400"></a>
             
                         <!-- This is the modal -->
                         <div id="modal-example" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">Bears on a Submarine</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="135" height="200">
+                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Sci-Fi, Horror, Romance</p>
@@ -128,14 +133,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="135" height="200"></a>
+                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
             
                         <!-- This is the modal -->
                         <div id="modal-example2" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">The Expendababies</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="135" height="200">
+                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Action, Comedy, Some Baby Thing</p>
@@ -155,14 +160,176 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="135" height="200"></a>
+                        <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
             
                         <!-- This is the modal -->
                         <div id="modal-example3" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">My Uncle the Alien</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="135" height="200">
+                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400">
+                                    <div class="uk-padding-large">
+                                        <h6 class="infoGenre">GENRES</h6>
+                                        <p class="infoGenre">Romance, Thriller</p>
+                                        <h6 class="infoMoods">MOODS</h6>
+                                        <p class="infoMoods">In Love</p>
+                                        <h6 class="infoUserRating">RATING</h6>
+                                        <p class="infoUserRating"> @ @ @ @ @</p>
+                                    </div>
+                                </div>
+                                <div class="uk-modal-footer uk-text-right">
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle">
+                    <div class="favoriteCard uk-animation-fade">
+                        <!-- This is an anchor toggling the modal -->
+                        <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
+                        <!-- This is the modal -->
+                        <div id="modal-example" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">Bears on a Submarine</h2>
+                                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400">
+                                    <div class="uk-padding-large">
+                                        <h6 class="infoGenre">GENRES</h6>
+                                        <p class="infoGenre">Sci-Fi, Horror, Romance</p>
+                                        <h6 class="infoMoods">MOODS</h6>
+                                        <p class="infoMoods">Happy, Scared</p>
+                                        <h6 class="infoUserRating">RATING</h6>
+                                        <p class="infoUserRating"> @ @ @ * *</p>
+                                    </div>
+                                </div>
+                                <div class="uk-modal-footer uk-text-right">
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle">
+                    <div class="favoriteCard uk-animation-fade">
+                        <!-- This is an anchor toggling the modal -->
+                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
+                        <!-- This is the modal -->
+                        <div id="modal-example2" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">The Expendababies</h2>
+                                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400">
+                                    <div class="uk-padding-large">
+                                        <h6 class="infoGenre">GENRES</h6>
+                                        <p class="infoGenre">Action, Comedy, Some Baby Thing</p>
+                                        <h6 class="infoMoods">MOODS</h6>
+                                        <p class="infoMoods">Excited</p>
+                                        <h6 class="infoUserRating">RATING</h6>
+                                        <p class="infoUserRating"> @ @ @ @ *</p>
+                                    </div>
+                                </div>
+                                <div class="uk-modal-footer uk-text-right">
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle">
+                    <div class="favoriteCard uk-animation-fade">
+                        <!-- This is an anchor toggling the modal -->
+                        <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
+                        <!-- This is the modal -->
+                        <div id="modal-example3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">My Uncle the Alien</h2>
+                                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400">
+                                    <div class="uk-padding-large">
+                                        <h6 class="infoGenre">GENRES</h6>
+                                        <p class="infoGenre">Romance, Thriller</p>
+                                        <h6 class="infoMoods">MOODS</h6>
+                                        <p class="infoMoods">In Love</p>
+                                        <h6 class="infoUserRating">RATING</h6>
+                                        <p class="infoUserRating"> @ @ @ @ @</p>
+                                    </div>
+                                </div>
+                                <div class="uk-modal-footer uk-text-right">
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle">
+                    <div class="favoriteCard uk-animation-fade">
+                        <!-- This is an anchor toggling the modal -->
+                        <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
+                        <!-- This is the modal -->
+                        <div id="modal-example" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">Bears on a Submarine</h2>
+                                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400">
+                                    <div class="uk-padding-large">
+                                        <h6 class="infoGenre">GENRES</h6>
+                                        <p class="infoGenre">Sci-Fi, Horror, Romance</p>
+                                        <h6 class="infoMoods">MOODS</h6>
+                                        <p class="infoMoods">Happy, Scared</p>
+                                        <h6 class="infoUserRating">RATING</h6>
+                                        <p class="infoUserRating"> @ @ @ * *</p>
+                                    </div>
+                                </div>
+                                <div class="uk-modal-footer uk-text-right">
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle">
+                    <div class="favoriteCard uk-animation-fade">
+                        <!-- This is an anchor toggling the modal -->
+                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
+                        <!-- This is the modal -->
+                        <div id="modal-example2" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">The Expendababies</h2>
+                                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400">
+                                    <div class="uk-padding-large">
+                                        <h6 class="infoGenre">GENRES</h6>
+                                        <p class="infoGenre">Action, Comedy, Some Baby Thing</p>
+                                        <h6 class="infoMoods">MOODS</h6>
+                                        <p class="infoMoods">Excited</p>
+                                        <h6 class="infoUserRating">RATING</h6>
+                                        <p class="infoUserRating"> @ @ @ @ *</p>
+                                    </div>
+                                </div>
+                                <div class="uk-modal-footer uk-text-right">
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-animation-toggle">
+                    <div class="favoriteCard uk-animation-fade">
+                        <!-- This is an anchor toggling the modal -->
+                        <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
+                        <!-- This is the modal -->
+                        <div id="modal-example3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">My Uncle the Alien</h2>
+                                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Romance, Thriller</p>
@@ -181,6 +348,9 @@
                 </div>
             </div>
             <img class="virgoConst" src="./assets/img/constellationTest.png" alt="Virgo Constellation">
+            <img class="cancerConst" src="./assets/img/cancerconstell.png" alt="Cancer Constellation">
+            <img class="capriConst" src="./assets/img/capricornconstell.png" alt="Capricorn Constellation">
+            <img class="taurusConst" src="./assets/img/taurusconstell.png" alt="Taurus Constellation">
         </div>
     </section>
     <script src="./assets/script/script.js"></script>
