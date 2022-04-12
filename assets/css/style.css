@@ -267,9 +267,7 @@ nav.visible li:last-child a {
 }
 
 /* Main Body CSS */
-#quizMenu {
 
-}
 
 .container {
   display: flex;
@@ -522,15 +520,10 @@ article a:hover {
 
 
 }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 .virgoConst:hover {
-  opacity: 1.0;
-=======
-=======
->>>>>>> 9284c9d4d1ffe34e65b657d5794b11c79eecf620
+  opacity: 1.0;}
 .infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
   color: black;
->>>>>>> dev
+
 }
