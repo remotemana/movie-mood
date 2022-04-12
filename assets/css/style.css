@@ -16,6 +16,7 @@
     background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/001/441/370/large/file.jpg?1640128516");
     background-color: black;
     color: whitesmoke;
+
     
 }
 
@@ -266,6 +267,9 @@ nav.visible li:last-child a {
 }
 
 /* Main Body CSS */
+#quizMenu {
+
+}
 
 .container {
   display: flex;
@@ -476,11 +480,19 @@ article a:hover {
 #favoritesMenu {
   display: flex;
   flex-direction: column;
+
+}
+
+.favTextArea {
+  position: absolute;
+  z-index: 6;
 }
 
 #favoritesMenu h1 {
   display: flex;
   justify-content: center;
+  z-index:2;
+
 }
 
 .cardsArea {
@@ -488,19 +500,37 @@ article a:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+
 }
 
 .favoriteCard {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  z-index: 4;
 }
 
-.moviePosterArea {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.virgoConst{
+  position: absolute;
+  z-index: 0;
+  max-width: 15%;
+  bottom: -800px;
+  left: 300px;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+
+
 }
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+.virgoConst:hover {
+  opacity: 1.0;
+=======
+=======
+>>>>>>> 9284c9d4d1ffe34e65b657d5794b11c79eecf620
 .infoGenre, .infoMoods, .infoLastWatched, .infoUserRating {
   color: black;
+>>>>>>> dev
 }
