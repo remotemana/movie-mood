@@ -55,30 +55,53 @@ function barClicked() {
   bars.classList.toggle('active');
   nav.classList.toggle('visible');
 }
-// Garrett JS FOR WHEEL=======================================================
+// Garrett JS FOR WHEEL============================================================================
 
 
-// Lucas Emotion to text api start============================================
-
+// Lucas Emotion to text api start==================================================================
 // TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
+// Button click start===============================================================================
+$('#mdBtn').on('click', function() {
+  
+  var myHeaders = new Headers();
+  myHeaders.append("apikey", "yOoOHlFQ2ZmZ60NwgqeuNBSzWiLBVWcL");
+  
+  var raw = $("#submitBtn").val();
+  
+  var requestOptions = {
+    method: 'POST',
+    redirect: 'follow',
+    headers: myHeaders,
+    body: raw
+  };
 
-// var myHeaders = new Headers();
-// myHeaders.append("apikey", "yOoOHlFQ2ZmZ60NwgqeuNBSzWiLBVWcL");
+   fetch("https://api.apilayer.com/text_to_emotion", requestOptions)
+    .then(response => response.json())
+  .then(result => {
+    console.log(result);
+    var moodResponse = result;
+    var keys = Object.keys(moodResponse)
+    console.log(keys)
+    var values = Object.values(result);
+    console.log(values)
+    var maxValue = Math.max(...values)
+    console.log(maxValue)
+    var highestMood = values.indexOf(maxValue)
+    // for (const key in response) {
+    //   if (response.key === maxValue) {
+    //      highestMood = response.key
+    //      console.log(highestMood)
+    //      return highestMood
+    //   }
+    // }
+    var test = keys[highestMood]
+    console.log(highestMood)
+    console.log(test)
+  })
+  .catch(error => console.log('error', error));
+})
 
-// var raw = "body";
-
-// var requestOptions = {
-//   method: 'POST',
-//   redirect: 'follow',
-//   headers: myHeaders,
-//   body: raw
-// };
-
-// fetch("https://api.apilayer.com/text_to_emotion", requestOptions)
-//   .then(response => response.text())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
-// Emotion to text api end====================================================
+// Button click end=================================================================================
 
 // IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
 function movieresults () {
@@ -116,4 +139,5 @@ function movieresults () {
 }
 
 // IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
+
 
