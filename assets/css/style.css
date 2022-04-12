@@ -122,6 +122,10 @@
 
 
 /* circle menu */
+.wheelOpacity{
+  opacity: .8;
+}
+
 .bars {
   /*   background-color:pink; */
   position: absolute;
@@ -202,7 +206,7 @@ span::after {
 }
 
 #nav a:hover {
-  background: #357ffd;
+  background: #e36d6d;
 }
 
 ul {
@@ -222,7 +226,7 @@ ul {
   right: -10vw;
   position: absolute;
   transition: all 1s ease-in-out;
-  background: #2979ff;
+  background: #455c71;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
 
@@ -587,5 +591,18 @@ article a:hover {
 /* GLOW ON HOVER */
 .virgoConst:hover, .cancerConst:hover, .capriConst:hover, .taurusConst:hover {
   opacity:1;
+
+}
+
+
+
+/* Footer Garrett */
+
+.footerMenu{
+text-align: center;
+background: white;
+}
+
+.mentalHealth{
 
 }
