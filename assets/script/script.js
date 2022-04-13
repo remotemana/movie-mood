@@ -142,7 +142,6 @@ if (fear === maxMood ) {
 }
 
 
-<<<<<<< HEAD
 
 // Emotion to text api end====================================================
 
@@ -375,6 +374,6 @@ form.addEventListener('submit', (e) => {
 })
 
 // MOVIE API END
-=======
+
 //emotion data links end===============================================================\
->>>>>>> dev
+
