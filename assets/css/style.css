@@ -16,8 +16,10 @@
     background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/001/441/370/large/file.jpg?1640128516");
     background-color: black;
     color: whitesmoke;
+  }
 
-    
+.cursor {
+  cursor: url("../img/crescent\ moon\ cursor.png"), auto;
 }
 
 /* header css =============================================================*/
@@ -102,7 +104,7 @@
   display: flex;
   justify-content: center;
 }
-#mood-button {
+#mdBtn {
   display: flex;
   position: absolute;
   bottom: 50px;

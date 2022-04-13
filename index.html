@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Sage</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
-    <script src="moment.js"></script>
-    <script>
-        moment().format();
-    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css">
 </head>
 <body>
+<div class="cursor">
 <div>
     
     <!-- GARRETT -->
@@ -50,12 +47,12 @@
     <div class="textButtonBox">
         <section class="uk-flex uk-flex-center" id="quizMenu">
             <div class="uk-margin" id="textArea">
-            <textarea class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center" style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px;" type="text"    placeholder="Tell it like it is!"></textArea>
+            <textarea class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center" style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px;" type="text" id="submitBtn"   placeholder="Tell it like it is!"></textArea>
             </div>
         </section>    
 
-        <div class="moodButton">
-            <button id="mood-button">Generate!</button>
+        <div class="moodButton" id="">
+            <button id="mdBtn">Generate!</button>
         </div>
     </div>
     <!-- end of text area -->
@@ -354,11 +351,12 @@
             <img class="capriConst" src="./assets/img/capricornconstell.png" alt="Capricorn Constellation">
             <img class="taurusConst" src="./assets/img/taurusconstell.png" alt="Taurus Constellation">
         </div>
-    </section>
+    </section>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
 
 <!-- Garrett Footer -->
 <footer id="footerMenu">
@@ -388,6 +386,6 @@
 
 
 
-
+</div>
 </body>
 </html>
