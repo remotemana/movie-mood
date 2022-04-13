@@ -104,64 +104,41 @@ $('#mdBtn').on('click', function() {
 
 // Button click end=================================================================================
 
-
-// IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
-function movieresults () {
-  for (i = 0; i > mood.length; i++){
-    // pulling the value out of the happy object in order to compare 
-      // need to figure out how to remove/hide it from the object 
-      // make all 
-    var happy = mood[i].happy.value()
-    var angry = mood[i].angry.value()
-    var surprise = mood[i].surprise.value()
-    var sad = mood[i].sad.value()
-    var fear = mood[i].fear.value()
-    if (happy > mood[i].length.val()) {
-      familygenre()
-      adventuregenre()
-      comedygenre()
-    } else if (angry > mood[i].length.val()){
-      adventuregenre()
-      actiongenre()
-      mysterygenre()
-    } else if (surprise > mood[i].val()) {
-      adventuregenre()
-      crimegenre()
-      dramagenre()
-    } else if (sad > mood[i].length.val()) {
-      adventuregenre()
-      actiongenre()
-      fantasygenre()
-    } else if (fear > mood[i].length.val()) {
-      romancegenre ()
-      sciencefictiongenre()
-      comedygenre()
-    }
-}
-}
-
-// IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
-
-// emotion data links start ===========================================================
+// group coding emotion data links start ===========================================================
+var happy = "Happy"
+var angry = "Angry"
+var surprise = "Surprise"
+var sad = "Sad" 
+var fear = "Fear"
 
 if (happy === maxMood) {
-  //inject math.random set of three movies into cards
+  familygenre()
+  adventuregenre()
+  comedygenre()
 }
 
 if (angry === maxMood) {
-
+  adventuregenre()
+  actiongenre()
+  mysterygenre()
 }
 
 if (surpirse === maxMood) {
-  
+  adventuregenre()
+  crimegenre()
+  dramagenre()
 }
 
 if (sad === maxMood) {
-
+  animation()
+  actiongenre()
+  fantasygenre()
 }
 
 if (fear === maxMood ) {
-  
+  romancegenre ()
+  sciencefictiongenre()
+  comedygenre()
 }
 
 

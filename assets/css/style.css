@@ -34,7 +34,7 @@
   /* display: table-cell; */
   text-align: center;
   vertical-align: middle;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
   padding-top: 250px;
   height: 80vh;
 }
@@ -117,7 +117,7 @@
 }
 
 .textButtonBox {
-  margin-bottom: 500px;
+  margin-bottom: 200px;
   height: 80vh;
 }
 /* end of text box area============================================================ */
