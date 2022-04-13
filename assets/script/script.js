@@ -94,9 +94,9 @@ $('#mdBtn').on('click', function() {
     //      return highestMood
     //   }
     // }
-    var test = keys[highestMood]
+    var maxMood = keys[highestMood]
     console.log(highestMood)
-    console.log(test)
+    console.log(maxMood)
   })
   .catch(error => console.log('error', error));
 })
@@ -140,4 +140,27 @@ function movieresults () {
 
 // IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
 
+// emotion data links start ===========================================================
 
+if (happy === maxMood) {
+  //inject math.random set of three movies into cards
+}
+
+if (angry === maxMood) {
+
+}
+
+if (surpirse === maxMood) {
+  
+}
+
+if (sad === maxMood) {
+
+}
+
+if (fear === maxMood ) {
+  
+}
+
+
+//emotion data links end===============================================================
