@@ -16,8 +16,10 @@
     background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/001/441/370/large/file.jpg?1640128516");
     background-color: black;
     color: whitesmoke;
+  }
 
-    
+.cursor {
+  cursor: url("../img/crescent\ moon\ cursor.png"), auto;
 }
 
 /* header css =============================================================*/
@@ -32,7 +34,7 @@
   /* display: table-cell; */
   text-align: center;
   vertical-align: middle;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
   padding-top: 250px;
   height: 80vh;
 }
@@ -102,7 +104,7 @@
   display: flex;
   justify-content: center;
 }
-#mood-button {
+#mdBtn {
   display: flex;
   position: absolute;
   bottom: 50px;
@@ -115,7 +117,7 @@
 }
 
 .textButtonBox {
-  margin-bottom: 500px;
+  margin-bottom: 200px;
   height: 80vh;
 }
 /* end of text box area============================================================ */
@@ -124,6 +126,10 @@
 
 
 /* circle menu */
+.wheelOpacity{
+  opacity: .8;
+}
+
 .bars {
   /*   background-color:pink; */
   position: absolute;
@@ -204,7 +210,7 @@ span::after {
 }
 
 #nav a:hover {
-  background: #357ffd;
+  background: #e36d6d;
 }
 
 ul {
@@ -224,7 +230,7 @@ ul {
   right: -10vw;
   position: absolute;
   transition: all 1s ease-in-out;
-  background: #2979ff;
+  background: #455c71;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
 
@@ -590,5 +596,18 @@ article a:hover {
 /* GLOW ON HOVER */
 .virgoConst:hover, .cancerConst:hover, .capriConst:hover, .taurusConst:hover {
   opacity:1;
+
+}
+
+
+
+/* Footer Garrett */
+
+.footerMenu{
+text-align: center;
+background: white;
+}
+
+.mentalHealth{
 
 }

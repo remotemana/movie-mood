@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Sage</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
 
+=======
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css">
+>>>>>>> dev
 </head>
 <body>
+<div class="cursor">
 <div>
     
     <!-- GARRETT -->
@@ -26,6 +31,7 @@
     <span class="bar"> </span>
   </div>
   <!--Navbar Links-->
+  <div class="menuOpacity">
   <nav id="nav">
     <ul>
       <li class="shape-circle circle-one"><a href="#">Resources</a></li>
@@ -34,6 +40,7 @@
       <li class="shape-circle circle-four"><a href="#">Mood</a></li>
     </ul>
   </nav>
+    </div>
   </div>
 </div>
 <!-- Garrett Resource Area-->
@@ -45,16 +52,21 @@
     <div class="textButtonBox">
         <section class="uk-flex uk-flex-center" id="quizMenu">
             <div class="uk-margin" id="textArea">
-            <textarea class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center" style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px;" type="text"    placeholder="Tell it like it is!"></textArea>
+            <textarea class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center" style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px;" type="text" id="submitBtn"   placeholder="Tell it like it is!"></textArea>
             </div>
         </section>    
 
-        <div class="moodButton">
-            <button id="mood-button">Generate!</button>
+        <div class="moodButton" id="">
+            <button id="mdBtn">Generate!</button>
         </div>
     </div>
     <!-- end of text area -->
+<!-- start of mood display -->
+    <div class="resultsArea">
+        <p class="uk-heading-large uk-text-center" style="color:antiquewhite; margin-bottom: 200px;">The Sage has determined you feel_________</p>
+    </div>
 
+<!-- end of mood display  -->
     <!-- BROOKE -->
 
     </section>
@@ -349,6 +361,7 @@
             <img class="capriConst" src="./assets/img/capricornconstell.png" alt="Capricorn Constellation">
             <img class="taurusConst" src="./assets/img/taurusconstell.png" alt="Taurus Constellation">
         </div>
+<<<<<<< HEAD
     </section>
 
     <section class="testGenreFilter">
@@ -382,20 +395,43 @@
         </div>
 
     </section>
+=======
+    </section>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+>>>>>>> dev
     <script src="./assets/script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
 
 
 <!-- Garrett Footer -->
+<footer class="footerMenu">
+<h4>Creators</h4>
+    <ul>
+    <li><a href="https://github.com/brookelove" target="_blank">Brooke Love</a></li>
+    <li><a href="https://github.com/Garrettdg10" target="_blank">Garrett Glenn</a></li>
+    <li><a href="https://github.com/remotemana" target="_blank">Lucas Roman</a></li>
+    <li><a href="https://github.com/KIMOISQUIGGLES" target="_blank">Tyler Alcover</a></li>
+</ul>
+<div class="mentalHealth">
+
+</div>
+<h4>Further resources to talk it out</h4>
+
+<ul>
+    <li><a href="https://www.mentalhealth.gov/" target="_blank">Mental Health Gov</a></li>
+    <li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank">National Mental Health Institute</a></li>
+</ul>
+
+
+
+</footer>
 
 
 
 
 
 
-
-
+</div>
 </body>
 </html>

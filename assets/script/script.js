@@ -55,31 +55,94 @@ function barClicked() {
   bars.classList.toggle('active');
   nav.classList.toggle('visible');
 }
-// Garrett JS FOR WHEEL=======================================================
+// Garrett JS FOR WHEEL============================================================================
 
 
-// Lucas Emotion to text api start============================================
-
+// Lucas Emotion to text api start==================================================================
 // TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
+// Button click start===============================================================================
+$('#mdBtn').on('click', function() {
+  
+  var myHeaders = new Headers();
+  myHeaders.append("apikey", "yOoOHlFQ2ZmZ60NwgqeuNBSzWiLBVWcL");
+  
+  var raw = $("#submitBtn").val();
+  
+  var requestOptions = {
+    method: 'POST',
+    redirect: 'follow',
+    headers: myHeaders,
+    body: raw
+  };
 
-// var myHeaders = new Headers();
-// myHeaders.append("apikey", "yOoOHlFQ2ZmZ60NwgqeuNBSzWiLBVWcL");
+   fetch("https://api.apilayer.com/text_to_emotion", requestOptions)
+    .then(response => response.json())
+  .then(result => {
+    // 1. giving the object of emotion weight values
+    console.log(result);
+    // 2. giving the array of name of happy angry suprise sad or fear
+    var moodResponse = result;
+    // 3. converts the object of names into an array 
+    var keys = Object.keys(moodResponse)
+    console.log(keys)
+    // 5.converts the values of the object into an array
+    var values = Object.values(result);
+    console.log(values)
+    // 5. gets the highest value out of the array
+    var maxValue = Math.max(...values)
+    console.log(maxValue)
+    var highestMood = values.indexOf(maxValue)
+    // 6. converts the value of the highest mood to the index of 0
+    var maxMood = keys[highestMood]
+     // 7. returns the index of the of the name with the highest value
+    console.log(highestMood)
+    // 8. returns the name of the value
+    console.log(maxMood)
+  })
+  .catch(error => console.log('error', error));
+})
 
-// var raw = "body";
+// Button click end=================================================================================
 
-// var requestOptions = {
-//   method: 'POST',
-//   redirect: 'follow',
-//   headers: myHeaders,
-//   body: raw
-// };
+// group coding emotion data links start ===========================================================
+var happy = "Happy"
+var angry = "Angry"
+var surprise = "Surprise"
+var sad = "Sad" 
+var fear = "Fear"
 
-// fetch("https://api.apilayer.com/text_to_emotion", requestOptions)
-//   .then(response => response.text())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
+if (happy === maxMood) {
+  familygenre()
+  adventuregenre()
+  comedygenre()
+}
+
+if (angry === maxMood) {
+  adventuregenre()
+  actiongenre()
+  mysterygenre()
+}
+
+if (surpirse === maxMood) {
+  adventuregenre()
+  crimegenre()
+  dramagenre()
+}
+
+if (sad === maxMood) {
+  animation()
+  actiongenre()
+  fantasygenre()
+}
+
+if (fear === maxMood ) {
+  romancegenre ()
+  sciencefictiongenre()
+  comedygenre()
+}
 
 
+<<<<<<< HEAD
 
 // Emotion to text api end====================================================
 
@@ -312,3 +375,6 @@ form.addEventListener('submit', (e) => {
 })
 
 // MOVIE API END
+=======
+//emotion data links end===============================================================\
+>>>>>>> dev
