@@ -357,7 +357,7 @@ article a:hover {
 
   /*BROOKE=====================================================================  */
 
-.mood-cards {
+#mood-cards {
   display: flex; 
   justify-content: center;
   margin-bottom: 500px;
@@ -601,7 +601,7 @@ article a:hover {
 
 /* Footer Garrett */
 
-.footerMenu{
+#footerMenu{
 text-align: center;
 background: white;
 }
