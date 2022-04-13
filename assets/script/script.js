@@ -103,6 +103,7 @@ $('#mdBtn').on('click', function() {
 
 // Button click end=================================================================================
 
+
 // IF ELSE STATEMENTS FOR THE EMOTIONS START ===================================
 function movieresults () {
   for (i = 0; i > mood.length; i++){
