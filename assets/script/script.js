@@ -78,24 +78,25 @@ $('#mdBtn').on('click', function() {
    fetch("https://api.apilayer.com/text_to_emotion", requestOptions)
     .then(response => response.json())
   .then(result => {
+    // 1. giving the object of emotion weight values
     console.log(result);
+    // 2. giving the array of name of happy angry suprise sad or fear
     var moodResponse = result;
+    // 3. converts the object of names into an array 
     var keys = Object.keys(moodResponse)
     console.log(keys)
+    // 5.converts the values of the object into an array
     var values = Object.values(result);
     console.log(values)
+    // 5. gets the highest value out of the array
     var maxValue = Math.max(...values)
     console.log(maxValue)
     var highestMood = values.indexOf(maxValue)
-    // for (const key in response) {
-    //   if (response.key === maxValue) {
-    //      highestMood = response.key
-    //      console.log(highestMood)
-    //      return highestMood
-    //   }
-    // }
+    // 6. converts the value of the highest mood to the index of 0
     var maxMood = keys[highestMood]
+     // 7. returns the index of the of the name with the highest value
     console.log(highestMood)
+    // 8. returns the name of the value
     console.log(maxMood)
   })
   .catch(error => console.log('error', error));
@@ -164,4 +165,4 @@ if (fear === maxMood ) {
 }
 
 
-//emotion data links end===============================================================
+//emotion data links end===============================================================\
