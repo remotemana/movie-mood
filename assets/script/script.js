@@ -57,14 +57,13 @@ function barClicked() {
 }
 // Garrett JS FOR WHEEL============================================================================
 
-
 // Lucas Emotion to text api start==================================================================
-// TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
+//  ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
 // Button click start===============================================================================
 $('#mdBtn').on('click', function() {
   
   var myHeaders = new Headers();
-  myHeaders.append("apikey", "yOoOHlFQ2ZmZ60NwgqeuNBSzWiLBVWcL");
+  myHeaders.append("apikey", "sdSmYIdXEYYzxmIWNuS3L8RY4kP5YJsQ");
   
   var raw = $("#submitBtn").val();
   
@@ -93,11 +92,46 @@ $('#mdBtn').on('click', function() {
     console.log(maxValue)
     var highestMood = values.indexOf(maxValue)
     // 6. converts the value of the highest mood to the index of 0
-    var maxMood = keys[highestMood]
+     maxMood = keys[highestMood]
      // 7. returns the index of the of the name with the highest value
     console.log(highestMood)
     // 8. returns the name of the value
     console.log(maxMood)
+
+     
+  }) .then (()=> {
+    
+    if (happy === maxMood) {
+      familygenre()
+      adventuregenre()
+      comedygenre()
+    }
+    
+    if (angry === maxMood) {
+      adventuregenre()
+      actiongenre()
+      mysterygenre()
+    }
+    
+    if (surprise === maxMood) {
+      adventuregenre()
+      crimegenre()
+      dramagenre()
+    }
+    
+    if (sad === maxMood) {
+      animation()
+      actiongenre()
+      fantasygenre()
+    }
+    
+    if (fear === maxMood ) {
+      romancegenre ()
+      sciencefictiongenre()
+      comedygenre()
+    }
+
+    document.getElementById("maxmood-output").innerText = maxMood
   })
   .catch(error => console.log('error', error));
 })
@@ -110,6 +144,7 @@ var angry = "Angry"
 var surprise = "Surprise"
 var sad = "Sad" 
 var fear = "Fear"
+var maxMood
 
 //DEFINES GENRE FOR MOOD
 var selectedGenre = [];

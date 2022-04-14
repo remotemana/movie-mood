@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" data-theme="moon">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Sage</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
-
-=======
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css">
->>>>>>> dev
 </head>
 <body>
-<div class="cursor">
-<div>
-    
-    <!-- GARRETT -->
-    <header class="headerMenu">
-        <div class="neon">Film </div>
-        <div class="flux">Sage </div>
-    </header>
-</div>
-    <!-- GARRETT -->
-<div class="wheelOpacity">
- 
-   <!--HamBurger Icon-->
-<div class="bars" id="nav-action">
-    <span class="bar"> </span>
-  </div>
-  <!--Navbar Links-->
-  <div class="menuOpacity">
-  <nav id="nav">
-    <ul>
-      <li class="shape-circle circle-one"><a href="#">Resources</a></li>
-      <li class="shape-circle circle-two"><a href="#">Favorites</a></li>
-      <li class="shape-circle circle-three"><a href="#">Films</a></li>
-      <li class="shape-circle circle-four"><a href="#">Mood</a></li>
-    </ul>
-  </nav>
+    <div class="cursor">
+        <div>
+
+            <!-- GARRETT -->
+            <header class="headerMenu">
+                <div class="neon">Film </div>
+                <div class="flux">Sage </div>
+            </header>
+
+            <img id="wizardHat" src="./assets/img/logo-icon.png" alt="wizardHat" style="width: 150px; height: 150px; box-shadow: #4F93A7;"></img>
+
+        </div>
+        <!-- GARRETT -->
+        <div class="wheelOpacity">
+
+            <!--HamBurger Icon-->
+            <div class="bars" id="nav-action">
+                <span class="bar"> </span>
+            </div>
+            <!--Navbar Links-->
+            <div class="menuOpacity">
+                <nav id="nav">
+                    <ul>
+                        <li class="shape-circle circle-one"><a href="#footerMenu" data-uk-smooth-scroll>Resources</a></li>
+                        <li class="shape-circle circle-two"><a href="#favoritesMenu">Favorites</a></li>
+                        <li class="shape-circle circle-three"><a href="#mood-cards">Films</a></li>
+                        <li class="shape-circle circle-four"><a href="#quizMenu">Mood</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
   </div>
 </div>
@@ -52,7 +54,10 @@
     <div class="textButtonBox">
         <section class="uk-flex uk-flex-center" id="quizMenu">
             <div class="uk-margin" id="textArea">
-            <textarea class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center" style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px;" type="text" id="submitBtn"   placeholder="Tell it like it is!"></textArea>
+                <textarea 
+                    class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center"
+                    style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px; color: #4F93A7 !important;"
+                    type="text" id="submitBtn" minlength="50" maxlength="200" placeholder="Tell it like it is!"></textArea>
             </div>
         </section>    
 
@@ -63,7 +68,8 @@
     <!-- end of text area -->
 <!-- start of mood display -->
     <div class="resultsArea">
-        <p class="uk-heading-large uk-text-center" style="color:antiquewhite; margin-bottom: 200px;">The Sage has determined you feel_________</p>
+        <p class="uk-heading-large uk-text-center" style="color:antiquewhite; margin-bottom: 100px;">The Sage has determined you feel...</p>
+        <p id="maxmood-output" style="text-align: center; font-size: 50px; text-decoration: underline; color: antiquewhite;"></p>
     </div>
 
 <!-- end of mood display  -->
@@ -399,34 +405,23 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
 
 
-<!-- Garrett Footer -->
-<footer class="footerMenu">
-<h4>Creators</h4>
-    <ul>
-    <li><a href="https://github.com/brookelove" target="_blank">Brooke Love</a></li>
-    <li><a href="https://github.com/Garrettdg10" target="_blank">Garrett Glenn</a></li>
-    <li><a href="https://github.com/remotemana" target="_blank">Lucas Roman</a></li>
-    <li><a href="https://github.com/KIMOISQUIGGLES" target="_blank">Tyler Alcover</a></li>
-</ul>
-<div class="mentalHealth">
+    <!-- Garrett Footer -->
+    <footer id="footerMenu" style="position: relative;">
 
-</div>
-<h4>Further resources to talk it out</h4>
+        <img src="./assets/img/grass.png" style="width: 100vw; margin-top: -400px;" >
 
-<ul>
-    <li><a href="https://www.mentalhealth.gov/" target="_blank">Mental Health Gov</a></li>
-    <li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank">National Mental Health Institute</a></li>
-</ul>
-
-
+        <ul style="margin-bottom: -500px; position: absolute; top: 70px; right: 600px;">
+            <h4 style="font-weight: bold;">Creators</h4>
+            <li><a href="https://github.com/brookelove" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Brooke Love</a></li>
+            <li><a href="https://github.com/Garrettdg10" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Garrett Glenn</a></li>
+            <li><a href="https://github.com/remotemana" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Lucas Roman</a></li>
+            <li><a href="https://github.com/KIMOISQUIGGLES" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Tyler Alcover</a></li>
+            <h4 style="font-weight: bold; font-size: 20px;">Further resources to talk it out</h4>
+            <li><a href="https://www.mentalhealth.gov/" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Mental Health Gov</a></li>
+            <li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">National Mental Health Institute</a></li>
+        </ul>
 
 </footer>
 
-
-
-
-
-
-</div>
 </body>
 </html>
