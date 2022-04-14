@@ -15,7 +15,7 @@
  body{
     background-image: url("https://cdna.artstation.com/p/marketplace/presentation_assets/001/441/370/large/file.jpg?1640128516");
     background-color: black;
-    color: whitesmoke;
+    color: rgb(79, 147, 167) !important;
   }
 
 .cursor {
@@ -311,6 +311,7 @@ h1 {
   font-size: 120px;
   letter-spacing: 5px;
   padding-top: 40px;
+  color: var(--light-calm) !important;
 }
 
 article p {
