@@ -56,7 +56,7 @@ function barClicked() {
   nav.classList.toggle('visible');
 }
 // Garrett JS FOR WHEEL============================================================================
-UIkit.Utils.scrollToElement(UIkit.$(resources, { }));
+
 
 // Lucas Emotion to text api start==================================================================
 // TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
@@ -111,57 +111,50 @@ var surprise = "Surprise"
 var sad = "Sad" 
 var fear = "Fear"
 
+//DEFINES GENRE FOR MOOD
+var selectedGenre = [];
+
 if (happy === maxMood) {
-  familygenre()
-  adventuregenre()
-  comedygenre()
+  console.log(maxMood);
+  selectedGenre.push(10751);
+  selectedGenre.push(12);
+  selectedGenre.push(35);
+  console.log(selectedGenre);
 }
 
 if (angry === maxMood) {
-  adventuregenre()
-  actiongenre()
-  mysterygenre()
+  console.log(maxMood);
+  selectedGenre.push(28);
+  selectedGenre.push(12);
+  selectedGenre.push(9648);
+  console.log(selectedGenre);
 }
 
-if (surpirse === maxMood) {
-  adventuregenre()
-  crimegenre()
-  dramagenre()
+if (surprise === maxMood) {
+  console.log(maxMood);
+  selectedGenre.push(12);
+  selectedGenre.push(80);
+  selectedGenre.push(18);
+  console.log(selectedGenre);
 }
 
 if (sad === maxMood) {
-  animation()
-  actiongenre()
-  fantasygenre()
+  console.log(maxMood);
+  selectedGenre.push(16);
+  selectedGenre.push(28);
+  selectedGenre.push(14);
+  console.log(selectedGenre);
 }
 
 if (fear === maxMood ) {
-  romancegenre ()
-  sciencefictiongenre()
-  comedygenre()
+  console.log(maxMood);
+  selectedGenre.push(10749);
+  selectedGenre.push(878);
+  selectedGenre.push(35);
+  console.log(selectedGenre);
 }
 
-
-
-// Emotion to text api end====================================================
-
-
-
-
 // TYLER JS FOR MOVIE API ==========================
-
-// AGENDA
-// 3. analyze movie data
-  // fetch the data of the movie by genre 
-  // grab the initial genre by id 
-    // get specific data: title, background img, release date, running time, directed by
-  // have functions that are correlated by the mood as well as end conditions
-// 4. display movies on the cards 
-//shows the background of the card
-  // that would be apart of the function for diplay cards 
-  // fetch the data of the genre 
-  // fetch specific data of the card (name)
-
 //TMDB DATA
 
 //GENERATES OUR API KEY
@@ -251,129 +244,55 @@ const genres = [
     "name": "Western"
   }
 ]
-var selectedGenre = [];
 
 const searchURL = BASE_URL + '/search/movie?' + API_KEY;
+const card1 = document.getElementById('card1');
+const card2 = document.getElementById('card2');
+const card3 = document.getElementById('card3');
 
-const main = document.getElementById('main');
-const form = document.getElementById('form');
-const search = document.getElementById('search');
-const tagsEl = document.getElementById('tags');
 
-//FILTER MOVIE SEARCH BY GENRE
-setGenre();
-
-function setGenre() {
-  //CLEARS CURRENT HTML
-  tagsEl.innerHTML = '';
-
-  //REPEATS PROCESS FOR EACH GENRE
-  genres.forEach(genre => {
-    //CREATES BUTTON FOR GIVEN GENRE
-    const t = document.createElement('div');
-    t.classList.add('tag');
-    t.id = genre.id;
-    t.innerText = genre.name;
-    //FITERS MOVIES ON CLICK OF GENRE BUTTON
-    t.addEventListener('click', () =>{
-      if (selectedGenre.length == 0){
-        //ADDS CHOSEN GENRE IF NOT ALREADY SELECTED
-        selectedGenre.push(genre.id);
-      }else {
-        //CHECKS IF GENRE HAS ALREADY BEEN SELECTED
-        if(selectedGenre.includes(genre.id)){
-          selectedGenre.forEach((id, idx) => {
-            //REMOVES GENRE FROM FILTER IF ALREADY SELECTED
-            if(id == genre.id){
-              selectedGenre.splice(idx, 1);
+for (let i = 0; i < selectedGenre.length; i++) {
   
-            }
-          })
-        }else {
-          //ADDS GENRE TO OUR FILTERED LIST
-          selectedGenre.push(genre.id);
-        }
-      }
-      console.log(selectedGenre)
-      //JOINS ALL GENRES IN ARRAY, PRESENTS AS A STRING
-      getMovies(API_URL + '&with_genres=' + encodeURI(selectedGenre.join(', ')))
+  //ENCOMPASSING FUNCTION FOR THE STEPS BELOW
+  getMovies(API_URL + '&with_genres=' +encodeURI(selectedGenre[i]));
+  
+  //GRABS ALL MOVIES COLLECTED FROM TMDB
+  function getMovies(url) {
+  
+    fetch(url).then(res => res.json()).then(data => {
+      console.log(data.results)
+      showMovies(data.results);
     })
-
-    tagsEl.append(t);
-  })
-}
-
-//ENCOMPASSING FUNCTION FOR THE STEPS BELOW
-getMovies(API_URL);
-
-//GRABS ALL MOVIES COLLECTED FROM TMDB
-function getMovies(url) {
-
-  fetch(url).then(res => res.json()).then(data => {
-    console.log(data.results)
-    showMovies(data.results);
-  })
-
-}
-
-//DISPLAYS INFORMATION FROM MOVIE
-function showMovies(data) {
-  //CLEARS MAIN
-  main.innerHTML = '';
-  //RUNS PROCESS FOR EVERY MOVIE AVAILABLE
-  data.forEach(movie => {
-    const {title, poster_path, vote_average, overview} = movie;
-    //CREATES NEW EMPTY DIV FOR A MOVIE
-    const movieEl = document.createElement('div');
-    //ADDS 'MOVIE' CLASS TO DIV
-    movieEl.classList.add('movie');
-    //CHANGES HTML OF DIV TO INCLUDE ALL WANTED INFORMATION
-    movieEl.innerHTML = `
-      
-      <img src="${IMG_URL+poster_path}" alt="${title}">
-
-      <div class ="movie-info">
-        <h3>${title}</h3>
-        <span class="${getColor(vote_average)}">${vote_average}</span>
+  
+  }
+  
+  //DISPLAYS INFORMATION FROM MOVIE
+  function showMovies(data) {
+    console.log(data);
+    //CLEARS MAIN
+    document.getElementById(`card${i+1}`).innerHTML = '';
+    //CHECKS TO MAKE SURE A MOVIE IS AVAILABLE IN THIS GENRE
+    console.log(data[0])
+    //CREATE NEW DIV TO PUT DATA INTO
+    const movieEl = document.createElement('div')
+    //DISPLAYS RUNTIME IF AVAILABLE, IF NOT, DISPLAY 'NOT AVAILABLE'
+    var runtime = data[0].runtime || "not available";
+    //REWRITES INNER HTML FOR OUR CARD
+    movieEl.innerHTML =`
+      <div class="movieinformation">
+        <h3> <strong>${data[0].title}</strong></h3>
+        <p>Release Date: ${data[0].release_date}</p>
+        <p>Running Time: ${runtime}</p>
+        <a href="#favorites" uk-icon="icon: heart"></a>
       </div>
-
-      <div class="overview">
-        <h3?>Overview</h3?>
-        ${overview}
-      </div>
-
-      `
-      //APPENDS OUR NEW MOVIE CARD TO MAIN SO WE CAN SEE IT ON OUR PAGE
-      main.appendChild(movieEl);
-  })
-
-}
-
-//CHECKS TMDB'S RATING OF MOVIE, CHANGES COLOR BASED ON SCORE
-function getColor(vote) {
-  if(vote >= 8){
-    return 'green'
-  }else if(vote >= 5){
-    return 'orange'
-  }else {
-    return 'red'
+    `
+    movieEl.style.backgroundImage = `url(${IMG_URL+data[0].poster_path})`
+    movieEl.style.zIndex = `6`
+    movieEl.style.filter = 'none'
+  
+    document.getElementById(`card${i+1}`).appendChild(movieEl);
   }
 }
 
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const searchTerm = search.value;
-
-  if(searchTerm){
-    getMovies(searchURL+'&query='+searchTerm)
-  }else{
-    getMovies(API_URL);
-  }
-})
 
 // MOVIE API END
-
-//emotion data links end===============================================================\
-
