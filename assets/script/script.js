@@ -63,7 +63,7 @@ function barClicked() {
 $('#mdBtn').on('click', function() {
   
   var myHeaders = new Headers();
-  myHeaders.append("apikey", "sdSmYIdXEYYzxmIWNuS3L8RY4kP5YJsQ");
+  myHeaders.append("apikey", "JUExjAtOKf3ypzrUtSA5QGnZLbvDr14O");
   
   var raw = $("#submitBtn").val();
   
