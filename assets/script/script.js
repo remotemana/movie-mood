@@ -92,7 +92,7 @@ $('#mdBtn').on('click', function() {
     console.log(maxValue)
     var highestMood = values.indexOf(maxValue)
     // 6. converts the value of the highest mood to the index of 0
-     maxMood = keys[highestMood]
+    maxMood = keys[highestMood]
      // 7. returns the index of the of the name with the highest value
     console.log(highestMood)
     // 8. returns the name of the value
@@ -101,53 +101,7 @@ $('#mdBtn').on('click', function() {
      
   }) .then (()=> {
     
-    if (happy === maxMood) {
-      familygenre()
-      adventuregenre()
-      comedygenre()
-    }
-    
-    if (angry === maxMood) {
-      adventuregenre()
-      actiongenre()
-      mysterygenre()
-    }
-    
-    if (surprise === maxMood) {
-      adventuregenre()
-      crimegenre()
-      dramagenre()
-    }
-    
-    if (sad === maxMood) {
-      animation()
-      actiongenre()
-      fantasygenre()
-    }
-    
-    if (fear === maxMood ) {
-      romancegenre ()
-      sciencefictiongenre()
-      comedygenre()
-    }
-
-    document.getElementById("maxmood-output").innerText = maxMood
-  })
-  .catch(error => console.log('error', error));
-})
-
-// Button click end=================================================================================
-
-// group coding emotion data links start ===========================================================
-var happy = "Happy"
-var angry = "Angry"
-var surprise = "Surprise"
-var sad = "Sad" 
-var fear = "Fear"
-var maxMood
-
-//DEFINES GENRE FOR MOOD
-var selectedGenre = [];
+    var selectedGenre = [];
 
 if (happy === maxMood) {
   console.log(maxMood);
@@ -188,6 +142,23 @@ if (fear === maxMood ) {
   selectedGenre.push(35);
   console.log(selectedGenre);
 }
+
+    document.getElementById("maxmood-output").innerText = maxMood
+  })
+  .catch(error => console.log('error', error));
+})
+
+// Button click end=================================================================================
+
+// group coding emotion data links start ===========================================================
+var happy = "Happy"
+var angry = "Angry"
+var surprise = "Surprise"
+var sad = "Sad" 
+var fear = "Fear"
+var maxMood
+
+//DEFINES GENRE FOR MOOD
 
 // TYLER JS FOR MOVIE API ==========================
 //TMDB DATA
