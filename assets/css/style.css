@@ -360,7 +360,7 @@ h1 {
 
 /*BROOKE=====================================================================  */
 
-.mood-cards {
+#mood-cards {
 display: flex; 
 justify-content: center;
 margin-bottom: 500px;
@@ -604,7 +604,7 @@ opacity:1;
 
 /* Footer Garrett */
 
-.footerMenu{
+#footerMenu{
 text-align: center;
 background: white;
 }
