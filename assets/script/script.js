@@ -92,12 +92,15 @@ $('#mdBtn').on('click', function() {
     console.log(maxValue)
     var highestMood = values.indexOf(maxValue)
     // 6. converts the value of the highest mood to the index of 0
-    var maxMood = keys[highestMood]
+    maxMood = keys[highestMood]
      // 7. returns the index of the of the name with the highest value
     console.log(highestMood)
     // 8. returns the name of the value
     console.log(maxMood)
 
+    
+  }) .then (()=> {
+    
     if (happy === maxMood) {
       familygenre()
       adventuregenre()
@@ -110,7 +113,7 @@ $('#mdBtn').on('click', function() {
       mysterygenre()
     }
     
-    if (surpirse === maxMood) {
+    if (surprise === maxMood) {
       adventuregenre()
       crimegenre()
       dramagenre()
@@ -127,9 +130,10 @@ $('#mdBtn').on('click', function() {
       sciencefictiongenre()
       comedygenre()
     }
-    
-    
+
+    document.getElementById("maxmood-output").innerText = maxMood
   })
+
   .catch(error => console.log('error', error));
 // })
 
@@ -141,6 +145,8 @@ var angry = "Angry"
 var surprise = "Surprise"
 var sad = "Sad" 
 var fear = "Fear"
+var maxMood
+
 
 // if (happy === maxMood) {
 //   familygenre()
