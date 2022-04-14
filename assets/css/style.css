@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-family: 'Roboto Mono',serif, monospace;
 }
 :root {
     --dark-calm: #455c71; /*rgb(69, 92, 113)*/
