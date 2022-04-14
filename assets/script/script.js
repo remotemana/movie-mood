@@ -56,7 +56,6 @@ function barClicked() {
   nav.classList.toggle('visible');
 }
 // Garrett JS FOR WHEEL============================================================================
-UIkit.Utils.scrollToElement(UIkit.$(resources, { }));
 
 // Lucas Emotion to text api start==================================================================
 // TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
@@ -64,7 +63,7 @@ UIkit.Utils.scrollToElement(UIkit.$(resources, { }));
 $('#mdBtn').on('click', function() {
   
   var myHeaders = new Headers();
-  myHeaders.append("apikey", "yOoOHlFQ2ZmZ60NwgqeuNBSzWiLBVWcL");
+  myHeaders.append("apikey", "sdSmYIdXEYYzxmIWNuS3L8RY4kP5YJsQ");
   
   var raw = $("#submitBtn").val();
   
@@ -98,9 +97,41 @@ $('#mdBtn').on('click', function() {
     console.log(highestMood)
     // 8. returns the name of the value
     console.log(maxMood)
+
+    if (happy === maxMood) {
+      familygenre()
+      adventuregenre()
+      comedygenre()
+    }
+    
+    if (angry === maxMood) {
+      adventuregenre()
+      actiongenre()
+      mysterygenre()
+    }
+    
+    if (surpirse === maxMood) {
+      adventuregenre()
+      crimegenre()
+      dramagenre()
+    }
+    
+    if (sad === maxMood) {
+      animation()
+      actiongenre()
+      fantasygenre()
+    }
+    
+    if (fear === maxMood ) {
+      romancegenre ()
+      sciencefictiongenre()
+      comedygenre()
+    }
+    
+    
   })
   .catch(error => console.log('error', error));
-})
+// })
 
 // Button click end=================================================================================
 
@@ -111,37 +142,40 @@ var surprise = "Surprise"
 var sad = "Sad" 
 var fear = "Fear"
 
-if (happy === maxMood) {
-  familygenre()
-  adventuregenre()
-  comedygenre()
-}
+// if (happy === maxMood) {
+//   familygenre()
+//   adventuregenre()
+//   comedygenre()
+// }
 
-if (angry === maxMood) {
-  adventuregenre()
-  actiongenre()
-  mysterygenre()
-}
+// if (angry === maxMood) {
+//   adventuregenre()
+//   actiongenre()
+//   mysterygenre()
+// }
 
-if (surpirse === maxMood) {
-  adventuregenre()
-  crimegenre()
-  dramagenre()
-}
+// if (surpirse === maxMood) {
+//   adventuregenre()
+//   crimegenre()
+//   dramagenre()
+// }
 
-if (sad === maxMood) {
-  animation()
-  actiongenre()
-  fantasygenre()
-}
+// if (sad === maxMood) {
+//   animation()
+//   actiongenre()
+//   fantasygenre()
+// }
 
-if (fear === maxMood ) {
-  romancegenre ()
-  sciencefictiongenre()
-  comedygenre()
-}
+// if (fear === maxMood ) {
+//   romancegenre ()
+//   sciencefictiongenre()
+//   comedygenre()
+// }
 
+// var moodView = maxMood
+// console.log(moodView)
 
+})
 
 // Emotion to text api end====================================================
 
