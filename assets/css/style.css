@@ -609,9 +609,6 @@ opacity:1;
 
 #footerMenu{
 text-align: center;
-background: white;
-background-image: url("./assets/img/grass.png");
-z-index: 10;
 }
 
 .mentalHealth{
