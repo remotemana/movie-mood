@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" data-theme="moon">
 
 <head>
@@ -7,12 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Sage</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css">
 </head>
-
 <body>
     <div class="cursor">
         <div>
@@ -46,12 +43,14 @@
             </div>
         </div>
     </div>
-    <!-- Garrett Resource Area-->
+  </div>
+</div>
+<!-- Garrett Resource Area-->
 
 
 
     <!-- LUCAS mood text area -->
-
+    
     <div class="textButtonBox">
         <section class="uk-flex uk-flex-center" id="quizMenu">
             <div class="uk-margin" id="textArea">
@@ -60,80 +59,76 @@
                     style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px; color: #4F93A7 !important;"
                     type="text" id="submitBtn" minlength="50" maxlength="200" placeholder="Tell it like it is!"></textArea>
             </div>
-        </section>
+        </section>    
 
         <div class="moodButton" id="">
-            <button id="mdBtn"style="background-color: #455C82; color: #C0B3Ae;">✨ Get Your Flix ✨</button>
+            <button id="mdBtn">Generate!</button>
         </div>
     </div>
     <!-- end of text area -->
-    <!-- start of mood display -->
+<!-- start of mood display -->
     <div class="resultsArea">
         <p class="uk-heading-large uk-text-center" style="color:antiquewhite; margin-bottom: 100px;">The Sage has determined you feel...</p>
         <p id="maxmood-output" style="text-align: center; font-size: 50px; text-decoration: underline; color: antiquewhite;"></p>
     </div>
-    <!-- end of mood display  -->
 
-
+<!-- end of mood display  -->
     <!-- BROOKE -->
 
     </section>
-
-    <section id="mood-cards">
-        <div class="caro-container">
-            <div class="card">
-                <div class="movieinformation">
-                    <h3>MOVIE</h3>
-                    <p>Release Date: </p>
-                    <p>Running Time: </p>
-                    <p>Directed by: </p>
-                    <a href="#favorites" uk-icon="icon: heart"></a>
-                </div>
+    
+<section class="mood-cards">
+    <div class="caro-container">
+        <div class="card" id="card1">
+            <div class="movieinformation">
+                <h3>MOVIE</h3>
+                <p>Release Date: </p>
+                <p>Running Time: </p>
+                <p>Directed by: </p>
+                <a href="#favorites" uk-icon="icon: heart"></a>
             </div>
         </div>
-        <div class="caro-container">
-            <div class="card">
-                <div class="movieinformation">
-                    <h3> <strong>MOVIE</strong></h3>
-                    <p>Release Date: </p>
-                    <p>Running Time: </p>
-                    <p>Directed by: </p>
-                    <a href="#favorites" uk-icon="icon: heart"></a>
-                </div>
+    </div>
+    <div class="caro-container">
+        <div class="card" id="card2">
+            <div class="movieinformation">
+                <h3> <strong>MOVIE</strong></h3>
+                <p>Release Date: </p>
+                <p>Running Time: </p>
+                <p>Directed by: </p>
+                <a href="#favorites" uk-icon="icon: heart"></a>
             </div>
         </div>
-        <div class="caro-container">
-            <div class="card">
-                <div class="movieinformation">
-                    <h3><strong>MOVIE</strong></h3>
-                    <p>Release Date: </p>
-                    <p>Running Time: </p>
-                    <p>Directed by: </p>
-                    <a href="#favorites" uk-icon="icon: heart"></a>
-                </div>
+    </div>
+    <div class="caro-container">
+        <div class="card" id="card3">
+            <div class="movieinformation">
+                <h3><strong>MOVIE</strong></h3>
+                <p>Release Date: </p>
+                <p>Running Time: </p>
+                <p>Directed by: </p>
+                <a href="#favorites" uk-icon="icon: heart"></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- TYLER -->
     <section id="favoritesMenu">
         <div class="favTextContent">
-            <h1 style="font-size: 90px;">Favorites</h1>
+            <h1>Favorites</h1>
             <div class="cardsArea" uk-sortable="handle: .favoriteCard">
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example" uk-toggle><img class="moviePoster"
-                                src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270"
-                                height="400"></a>
-
+                        <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">Bears on a Submarine</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg"
-                                        alt="dummy film poster" width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Sci-Fi, Horror, Romance</p>
@@ -144,8 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -154,16 +148,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg"
-                                alt="dummy film poster" width="270" height="400"></a>
-
+                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example2" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">The Expendababies</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster"
-                                        width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Action, Comedy, Some Baby Thing</p>
@@ -174,8 +166,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -184,17 +175,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example3" uk-toggle><img class="moviePoster"
-                                src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270"
-                                height="400"></a>
-
+                        <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example3" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">My Uncle the Alien</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg"
-                                        alt="dummy film poster" width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Romance, Thriller</p>
@@ -205,8 +193,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -215,17 +202,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example" uk-toggle><img class="moviePoster"
-                                src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270"
-                                height="400"></a>
-
+                        <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">Bears on a Submarine</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg"
-                                        alt="dummy film poster" width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Sci-Fi, Horror, Romance</p>
@@ -236,8 +220,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -246,16 +229,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg"
-                                alt="dummy film poster" width="270" height="400"></a>
-
+                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example2" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">The Expendababies</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster"
-                                        width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Action, Comedy, Some Baby Thing</p>
@@ -266,8 +247,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -276,17 +256,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example3" uk-toggle><img class="moviePoster"
-                                src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270"
-                                height="400"></a>
-
+                        <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example3" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">My Uncle the Alien</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg"
-                                        alt="dummy film poster" width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Romance, Thriller</p>
@@ -297,8 +274,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -307,17 +283,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example" uk-toggle><img class="moviePoster"
-                                src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270"
-                                height="400"></a>
-
+                        <a href="#modal-example" uk-toggle><img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">Bears on a Submarine</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg"
-                                        alt="dummy film poster" width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/dummyScreenshot.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Sci-Fi, Horror, Romance</p>
@@ -328,8 +301,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -338,16 +310,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg"
-                                alt="dummy film poster" width="270" height="400"></a>
-
+                        <a href="#modal-example2" uk-toggle><img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example2" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">The Expendababies</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster"
-                                        width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/babyPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Action, Comedy, Some Baby Thing</p>
@@ -358,8 +328,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -368,17 +337,14 @@
                 <div class="uk-animation-toggle">
                     <div class="favoriteCard uk-animation-fade">
                         <!-- This is an anchor toggling the modal -->
-                        <a href="#modal-example3" uk-toggle><img class="moviePoster"
-                                src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270"
-                                height="400"></a>
-
+                        <a href="#modal-example3" uk-toggle><img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400"></a>
+            
                         <!-- This is the modal -->
                         <div id="modal-example3" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title">My Uncle the Alien</h2>
                                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg"
-                                        alt="dummy film poster" width="270" height="400">
+                                    <img class="moviePoster" src="./assets/img/myUncleTheAlienPoster.jpg" alt="dummy film poster" width="270" height="400">
                                     <div class="uk-padding-large">
                                         <h6 class="infoGenre">GENRES</h6>
                                         <p class="infoGenre">Romance, Thriller</p>
@@ -389,8 +355,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-modal-footer uk-text-right">
-                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from
-                                        Favorites</button>
+                                    <button class="deleteButton uk-button uk-button-primary" type="button">Remove from Favorites</button>
                                 </div>
                             </div>
                         </div>
@@ -433,8 +398,8 @@
                 </div>
             </div>
         </div>
+
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
@@ -456,8 +421,7 @@
             <li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">National Mental Health Institute</a></li>
         </ul>
 
-    </footer>
+</footer>
 
 </body>
-
 </html>
