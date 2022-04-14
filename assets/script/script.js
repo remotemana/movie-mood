@@ -56,7 +56,7 @@ function barClicked() {
   nav.classList.toggle('visible');
 }
 // Garrett JS FOR WHEEL============================================================================
-
+UIkit.Utils.scrollToElement(UIkit.$(resources, { }));
 
 // Lucas Emotion to text api start==================================================================
 // TODO: ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
