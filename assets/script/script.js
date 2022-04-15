@@ -116,7 +116,7 @@ if (angry === maxMood) {
   console.log(maxMood);
   selectedGenre.push(28);
   selectedGenre.push(12);
-  selectedGenre.push(9648);
+  selectedGenre.push(53);
   console.log(selectedGenre);
 }
 
@@ -138,7 +138,7 @@ if (sad === maxMood) {
 
 if (fear === maxMood ) {
   console.log(maxMood);
-  selectedGenre.push(10749);
+  selectedGenre.push(14);
   selectedGenre.push(878);
   selectedGenre.push(35);
   console.log(selectedGenre);

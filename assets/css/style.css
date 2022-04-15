@@ -460,7 +460,7 @@ color: #fff;
 .caro-container .card:hover .movieinformation
 {
 /* left: -25px */
-padding: 70px 70px; /*change here */
+padding: 70px 70px; /*change here  I get is the dummy card so then when we replace them with the Sage poster on top of it it's not like we don't have to rewrite all that coded so we have to do is just put in the Sage card instead of that no*/
 }
 
 .caro-container .card .movieinformation h3 /*change here*/
