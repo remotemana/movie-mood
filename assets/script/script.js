@@ -60,6 +60,7 @@ function barClicked() {
 // Lucas Emotion to text api start==================================================================
 //  ONLY uncomment emotion api text IF NEEDED. Server Requests are limited at (30/aUser/aMonth) 
 // Button click start===============================================================================
+var selectedGenre = [];
 $('#mdBtn').on('click', function() {
   
   var myHeaders = new Headers();
@@ -101,13 +102,13 @@ $('#mdBtn').on('click', function() {
      
   }) .then (()=> {
     
-    var selectedGenre = [];
-
+    
 if (happy === maxMood) {
   console.log(maxMood);
   selectedGenre.push(10751);
   selectedGenre.push(12);
   selectedGenre.push(35);
+
   console.log(selectedGenre);
 }
 
@@ -115,7 +116,7 @@ if (angry === maxMood) {
   console.log(maxMood);
   selectedGenre.push(28);
   selectedGenre.push(12);
-  selectedGenre.push(9648);
+  selectedGenre.push(53);
   console.log(selectedGenre);
 }
 
@@ -137,17 +138,17 @@ if (sad === maxMood) {
 
 if (fear === maxMood ) {
   console.log(maxMood);
-  selectedGenre.push(10749);
+  selectedGenre.push(14);
   selectedGenre.push(878);
   selectedGenre.push(35);
   console.log(selectedGenre);
 }
+displayMovie()
 
     document.getElementById("maxmood-output").innerText = maxMood
   })
   .catch(error => console.log('error', error));
 })
-
 // Button click end=================================================================================
 
 // group coding emotion data links start ===========================================================
@@ -256,49 +257,52 @@ const card1 = document.getElementById('card1');
 const card2 = document.getElementById('card2');
 const card3 = document.getElementById('card3');
 
-
-for (let i = 0; i < selectedGenre.length; i++) {
+function displayMovie() {
   
-  //ENCOMPASSING FUNCTION FOR THE STEPS BELOW
-  getMovies(API_URL + '&with_genres=' +encodeURI(selectedGenre[i]));
-  
-  //GRABS ALL MOVIES COLLECTED FROM TMDB
-  function getMovies(url) {
-  
-    fetch(url).then(res => res.json()).then(data => {
-      console.log(data.results)
-      showMovies(data.results);
-    })
-  
-  }
-  
-  //DISPLAYS INFORMATION FROM MOVIE
-  function showMovies(data) {
-    console.log(data);
-    //CLEARS MAIN
-    document.getElementById(`card${i+1}`).innerHTML = '';
-    //CHECKS TO MAKE SURE A MOVIE IS AVAILABLE IN THIS GENRE
-    console.log(data[0])
-    //CREATE NEW DIV TO PUT DATA INTO
-    const movieEl = document.createElement('div')
-    //DISPLAYS RUNTIME IF AVAILABLE, IF NOT, DISPLAY 'NOT AVAILABLE'
-    var runtime = data[0].runtime || "not available";
-    //REWRITES INNER HTML FOR OUR CARD
-    movieEl.innerHTML =`
+  for (let i = 0; i < selectedGenre.length; i++) {
+    
+    //ENCOMPASSING FUNCTION FOR THE STEPS BELOW
+    getMovies(API_URL + '&with_genres=' +encodeURI(selectedGenre[i]));
+    
+    //GRABS ALL MOVIES COLLECTED FROM TMDB
+    function getMovies(url) {
+      
+      fetch(url).then(res => res.json()).then(data => {
+        console.log(data.results)
+        showMovies(data.results);
+      })
+      
+    }
+    
+    //DISPLAYS INFORMATION FROM MOVIE
+    function showMovies(data) {
+      console.log(data);
+      //CLEARS MAIN
+      document.getElementById(`card${i+1}`).innerHTML = '';
+      //CHECKS TO MAKE SURE A MOVIE IS AVAILABLE IN THIS GENRE
+      console.log(data[0])
+      //CREATE NEW DIV TO PUT DATA INTO
+      const movieEl = document.createElement('div')
+      //DISPLAYS RUNTIME IF AVAILABLE, IF NOT, DISPLAY 'NOT AVAILABLE'
+      var runtime = data[0].runtime || "not available";
+      //REWRITES INNER HTML FOR OUR CARD
+      movieEl.innerHTML =`
       <div class="movieinformation">
-        <h3> <strong>${data[0].title}</strong></h3>
-        <p>Release Date: ${data[0].release_date}</p>
-        <p>Running Time: ${runtime}</p>
-        <a href="#favorites" uk-icon="icon: heart"></a>
+      <h3> <strong>${data[0].title}</strong></h3>
+      <p>Release Date: ${data[0].release_date}</p>
+      <p>Running Time: ${runtime}</p>
+      <a href="#favorites" uk-icon="icon: heart"></a>
       </div>
-    `
-    movieEl.style.backgroundImage = `url(${IMG_URL+data[0].poster_path})`
-    movieEl.style.zIndex = `6`
-    movieEl.style.filter = 'none'
-  
-    document.getElementById(`card${i+1}`).appendChild(movieEl);
+      `
+      movieEl.style.backgroundImage = `url(${IMG_URL+data[0].poster_path})`
+      movieEl.style.zIndex = `6`
+      movieEl.style.filter = 'none'
+      
+      document.getElementById(`card${i+1}`).appendChild(movieEl);
+    }
   }
 }
-
-
-// MOVIE API END
+  
+  
+  // MOVIE API END
+  
