@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono',serif, monospace;
+  text-decoration: none;
+  color: inherit;
 }
 /* [data-theme= 'moon'] { */
   /* cursor: url("/assets/img/crescent\ moon\ cursor.png"), auto !important; */
@@ -365,9 +367,23 @@ h1 {
 
 #mood-cards {
 display: flex; 
+flex-direction: row;
 justify-content: center;
 margin-bottom: 500px;
 height: 80vh;
+}
+
+@media screen and (max-width: 1258px) {
+    
+  #mood-cards {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 500px;
+    height: 80vh;
+  }
+    
+
 }
 
 .caro-container
@@ -500,8 +516,11 @@ box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 
 /* text input start ================================================================================ */
 
-
-
+#textArea {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
 
 /* text input stops ================================================================================ */
 
@@ -607,10 +626,76 @@ opacity:1;
 
 /* Footer Garrett */
 
+.footerMenuContainer {
+  display: flex;
+  
+}
+
 #footerMenu{
 text-align: center;
 }
 
-.mentalHealth{
+.containerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;  
+}
+
+.footerContainer h2 {
+  font-weight: bold
+}
+
+.creators, .mentalHealth {
+  font-size: 30px;
+  border: 10px;
+  border-radius: 15px;
+  background: rgba(4, 8, 49, 0.58);
+  padding-right: 20px;
+  width: 20vw;
+}
+
+.creators a, .creators h2, .mentalHealth a, .mentalHealth h2 {
+  color: antiquewhite;
+}
+
+@media screen and (max-width: 1440px) {
+    
+  .creators, .mentalHealth {
+    font-size: 20px;
+  }
+    
+
+}
+
+@media screen and (max-width: 1024px) {
+  .footerContainer h2{
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .creators, .mentalHealth {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .footerContainer {
+    flex-direction: column;
+    bottom: 80%;
+  }
+
+  .footerContainer h2{
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .creators, .mentalHealth {
+    font-size: 10px;
+    width: 80vw;
+  }
 }

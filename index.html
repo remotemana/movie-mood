@@ -49,7 +49,7 @@
         </div>
     </div>
 <!--   </div>
-</div> check later---------------
+</div> check later--------------->
 <!-- Garrett Resource Area-->
 
 
@@ -61,7 +61,7 @@
             <div class="uk-margin" id="textArea">
                 <textarea 
                     class="customInput uk-input uk-form-width-large uk-text-background uk-height-large uk-text-center"
-                    style="width: 900px; border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px; color: #4F93A7 !important;"
+                    style="border-radius: 25px 25px 25px 25px; font-size: 50px; line-height: 75px; color: #4F93A7 !important;"
                     type="text" id="submitBtn" minlength="50" maxlength="200" placeholder="Tell it like it is!"></textArea>
             </div>
         </section>    
@@ -374,36 +374,6 @@
         </div>
     </section>
 
-    <section class="testGenreFilter">
-        <div id="tags">
-            <div class="tag">Action</div>
-            <div class="tag">Adventure</div>
-            <div class="tag">Drama</div>
-        </div>
-    </section>
-
-    <section class="testTMDB">
-        <div>
-            <form id="form">
-                <input type="text" placeholder="search" id="search" class="search">
-            </form>
-        </div>
-
-        <div id="main">
-            <div class="movie">
-                <img>
-
-                <div class="movie-info">
-                    <h3>Movie Title</h3>
-                    <span class="green">9.8</span>
-                </div>
-
-                <div class="overview">
-                    sdgnuiasldundlansdljknvlakjsd
-                </div>
-            </div>
-        </div> -->
-
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script/script.js"></script>
@@ -412,22 +382,33 @@
 
 
     <!-- Garrett Footer -->
-    <footer id="footerMenu" style="position: relative;">
-
-        <img src="./assets/img/grass.png" style="width: 100vw; margin-top: -400px;" >
-
-        <ul style="margin-bottom: -500px; position: absolute; top: 70px; right: 600px;">
-            <h4 style="font-weight: bold;">Creators</h4>
-            <li><a href="https://github.com/brookelove" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Brooke Love</a></li>
-            <li><a href="https://github.com/Garrettdg10" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Garrett Glenn</a></li>
-            <li><a href="https://github.com/remotemana" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Lucas Roman</a></li>
-            <li><a href="https://github.com/KIMOISQUIGGLES" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Tyler Alcover</a></li>
-            <h4 style="font-weight: bold; font-size: 20px;">Further resources to talk it out</h4>
-            <li><a href="https://www.mentalhealth.gov/" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">Mental Health Gov</a></li>
-            <li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank" style="color: black; font-weight: bold; font-size: 15px;">National Mental Health Institute</a></li>
-        </ul>
-
-</footer>
+    <div class="footerMenuContainer">
+        <footer id="footerMenu" style="position: relative;">
+            <img src="./assets/img/grass.png" style="width: 100vw;" >
+            <div class="containerContainer">
+                <div style="position: absolute; top: 50%;">
+                    <div class="footerContainer">
+                        <div class="creators">
+                            <ul>
+                                <h2>Creators</h2>
+                                <li><a href="https://github.com/brookelove" target="_blank" style=" font-weight: bold;">Brooke Love</a></li>
+                                <li><a href="https://github.com/Garrettdg10" target="_blank" style="font-weight: bold;">Garrett Glenn</a></li>
+                                <li><a href="https://github.com/remotemana" target="_blank" style="font-weight: bold;">Lucas Roman</a></li>
+                                <li><a href="https://github.com/KIMOISQUIGGLES" target="_blank" style="font-weight: bold;">Tyler Alcover</a></li>
+                            </ul>
+                        </div>
+                        <div class="mentalHealth">
+                            <ul>
+                                <h2>Further resources to talk it out</h2>
+                                <li><a href="https://www.mentalhealth.gov/" target="_blank" style=" font-weight: bold;">Mental Health Gov</a></li>
+                                <li><a href="https://www.nimh.nih.gov/health/find-help" target="_blank" style="font-weight: bold;">National Mental Health Institute</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 </body>
 </html>
