@@ -64,7 +64,7 @@ var selectedGenre = [];
 $('#mdBtn').on('click', function() {
   
   var myHeaders = new Headers();
-  myHeaders.append("apikey", "JUExjAtOKf3ypzrUtSA5QGnZLbvDr14O");
+  myHeaders.append("apikey", "");
   
   var raw = $("#submitBtn").val();
   
